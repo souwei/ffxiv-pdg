@@ -3,14 +3,18 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+
+import { TabsPage } from '../pages/tabs/tabs';
+import { ExpertDungeonsPage } from '../pages/expert-dungeons/expert-dungeons';
+import { LevelDungeonsPage } from '../pages/level-dungeons/level-dungeons';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    TabsPage,
+    ExpertDungeonsPage,
+    LevelDungeonsPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,9 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    TabsPage,
+    ExpertDungeonsPage,
+    LevelDungeonsPage
   ],
   providers: [
     StatusBar,
