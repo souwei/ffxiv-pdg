@@ -8,5 +8,11 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <button ion-item
+            detail-push
+            *ngFor="let dungeon of dungeonsCollection">
+      <h2>{{ dungeon.dungeonName | uppercase }}</h2>
+    </button>
+  </ion-list>
 </ion-content>

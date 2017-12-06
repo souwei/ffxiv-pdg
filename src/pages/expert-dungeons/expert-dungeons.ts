@@ -12,7 +12,6 @@ export class ExpertDungeonsPage {
   dungeonsCollection: Dungeon[];
   dungeonPage = DungeonInfoPage;
 
-
   ngOnInit(){
   this.dungeonsCollection = expertDungeons;
   }

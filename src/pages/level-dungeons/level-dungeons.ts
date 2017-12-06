@@ -1,25 +1,18 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Dungeon } from '../../data/dungeon.interface';
+import { DungeonInfoPage } from '../dungeon-info/dungeon-info';
+import levelingDungeons from '../../data/levelingDungeons';
 
-/**
- * Generated class for the LevelDungeonsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-level-dungeons',
   templateUrl: 'level-dungeons.html',
 })
+
 export class LevelDungeonsPage {
+  dungeonsCollection: Dungeon[];
+  dungeonPage = DungeonInfoPage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  ngOnInit(){
+  this.dungeonsCollection = levelingDungeons;
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LevelDungeonsPage');
-  }
-
 }
