@@ -1,25 +1,20 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Dungeon } from '../../data/dungeon.interface';
+import { DungeonInfoPage } from '../dungeon-info/dungeon-info';
+import expertDungeons from '../../data/expertDungeons';
 
-/**
- * Generated class for the ExpertDungeonsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-expert-dungeons',
   templateUrl: 'expert-dungeons.html',
 })
+
 export class ExpertDungeonsPage {
+  dungeonsCollection: Dungeon[];
+  dungeonPage = DungeonInfoPage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ExpertDungeonsPage');
+  ngOnInit(){
+  this.dungeonsCollection = expertDungeons;
   }
 
 }
