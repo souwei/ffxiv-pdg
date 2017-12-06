@@ -5,7 +5,7 @@ import { ExpertDungeonsPage } from '../expert-dungeons/expert-dungeons';
 @Component({
   selector: 'page-tabs',
   template: `
-    <ion-tabs>
+    <ion-tabs (ionChange)="resetStack($event)">
       <ion-tab [root]="levelDungeonsPage" tabTitle="Leveling Dungeon" tabIcon="leaf"></ion-tab>
       <ion-tab [root]="expertDungeonsPage" tabTitle="Expert Dungeon" tabIcon="star"></ion-tab>
     </ion-tabs>
@@ -15,4 +15,10 @@ import { ExpertDungeonsPage } from '../expert-dungeons/expert-dungeons';
 export class TabsPage {
   levelDungeonsPage = LevelDungeonsPage;
   expertDungeonsPage = ExpertDungeonsPage;
+
+  resetStack(ev:any){
+    if(ev.length()>1){
+      ev.popToRoot();
+    }
+  }
 }

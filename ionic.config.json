@@ -1,6 +1,6 @@
 {
   "name": "ffxivPocketDG",
-  "app_id": "",
+  "app_id": "9ee02b1d",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
