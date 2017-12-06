@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component , OnInit } from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
 import { Dungeon } from '../../data/dungeon.interface';
 
 @Component({
@@ -7,8 +7,9 @@ import { Dungeon } from '../../data/dungeon.interface';
   templateUrl: 'dungeon-info.html',
 })
 
-export class DungeonInfoPage {
+export class DungeonInfoPage implements OnInit {
   dungeon: Dungeon;
+  
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams) {

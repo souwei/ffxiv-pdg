@@ -1,12 +1,33 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>DungeonInfo</ion-title>
+    <ion-title> {{ dungeon.dungeonName }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <h5>Dungeon Tips</h5>
+  <ion-card>
+      <ul>
+        <li *ngFor="let tips of dungeon.dungeonTips">
+            {{ tips }}
+        </li>
+      </ul>
+  </ion-card>
 
+  <h5>Boss Tips</h5>
+  <ion-card *ngFor="let boss of dungeon.bossTips">
+    <ion-card-title padding-horizontal>
+      {{ boss.bossName }}
+    </ion-card-title>
+
+      <ul class="dungeon-tip">
+        <li *ngFor="let tip of boss.bossTips">
+            {{ tip }}
+        </li>
+      </ul>
+
+  </ion-card>
 </ion-content>

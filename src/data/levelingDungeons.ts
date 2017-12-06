@@ -44,7 +44,9 @@ export default [
       {
         bossName: 'Denn the Orcatoothed',
         bossTips: [
-          'When bubbling water appears, interact with it to prevent adds from spawning'
+          'When bubbling water appears, interact with it to prevent adds from spawning',
+          'Note that imp damage will interrupt spell casting.',
+          'Note that imps make Galvanth immune to damage, so prioritize killing them quickly before killing the other adds.'
         ]
       }
     ]
@@ -450,7 +452,7 @@ export default [
     ]
   },
   {
-    dungeonName: "Bardams's Mettle",
+    dungeonName: "Bardam's Mettle",
     dungeonTips: ['Sample Data'],
     bossTips: [
       {
