@@ -11,6 +11,8 @@
   <ion-list>
     <button ion-item
             detail-push
+            [navPush]="dungeonPage"
+            [navParams]="dungeon"
             *ngFor="let dungeon of dungeonsCollection">
       <h2>{{ dungeon.dungeonName | uppercase }}</h2>
     </button>

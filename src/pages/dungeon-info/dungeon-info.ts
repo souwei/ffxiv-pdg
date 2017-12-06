@@ -1,25 +1,21 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Dungeon } from '../../data/dungeon.interface';
 
-/**
- * Generated class for the DungeonInfoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-dungeon-info',
   templateUrl: 'dungeon-info.html',
 })
 export class DungeonInfoPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  dungeon: Dungeon;
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DungeonInfoPage');
+
+  ngOnInit(){
+    this.dungeon = this.navParams.data;
   }
 
 }

@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ExpertDungeonsPage } from '../pages/expert-dungeons/expert-dungeons';
 import { LevelDungeonsPage } from '../pages/level-dungeons/level-dungeons';
+import { DungeonInfoPage } from '../pages/dungeon-info/dungeon-info';
 
 @NgModule({
   declarations: [
     MyApp,
     TabsPage,
     ExpertDungeonsPage,
-    LevelDungeonsPage
+    LevelDungeonsPage,
+    DungeonInfoPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { LevelDungeonsPage } from '../pages/level-dungeons/level-dungeons';
     MyApp,
     TabsPage,
     ExpertDungeonsPage,
-    LevelDungeonsPage
+    LevelDungeonsPage,
+    DungeonInfoPage
   ],
   providers: [
     StatusBar,
