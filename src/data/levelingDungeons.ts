@@ -338,7 +338,7 @@ export default [
         bossName: "Ser Yuhelmeric",
         bossTips: [
           "[HEAL] 'Brain Drain' - Room wide AoE.",
-          "[ADDS] Kill adds asap",
+          "[ADDS] Kill adds asap.",
           "[AVOID] 'Death spiral' - Donut AoE , stack near boss"
         ]
       },
@@ -515,26 +515,26 @@ export default [
       {
         bossName: "Amikiri",
         bossTips: [
-          "Shuck – Long cast time ability at a player. Boss’s leg becomes vulnerable. Kill it before timer. Once dead, boss becomes vulnerable – DPS him.",
-          "Kamikiri Emerges – Add spawns and players get blue marker. Run marker to wall to drop pool, then kill the add."
+          "Target - 'Shuck'; Heal targetted player and kill tail asap.",
+          "Adds - 'Kamikiri Emerges'; Kill adds asap.",
+          "Target - 'Blue marker'; targeted players split and run to wall. ; Healers should heal"
         ]
       },
       {
         bossName: "Ruby Princess",
         bossTips: [
-          "Seduce - Run towards the chest to negate this attack",
-          "Abyssal Volcano – AOE from boss and targeted players. Targeted players should drop away from group, then kite away from group.",
-          "Coriolis Kick – Avoid Large Circle Aoe"
+          "Mechanic - 'Seduce'; Run to chest",
+          "Target - 'Abyssal Volcano'; AOE from boss and targeted players. Targeted players should drop away from group, then kite away from group."
         ]
       },
       {
         bossName: "Shisui Yohi",
         bossTips: [
-          "Mad stare - face character away from boss.",
-          "Thick Fog - Unavoidable Room wide AoE damage (Healers prepare to heal).",
+          "Avoid - 'Mad stare'; Face away from boss.",
+          "Unavoidable AoE - 'Thick Fog'; Healers prepare to heal.",
           "Adds - Kill Sharks that spawn asap.",
-          "Adds - Destroy Orbs as soon asap.",
-          "Avoid standing underneath boss when she goes underwater."
+          "Adds - Destroy orbs asap.",
+          "Avoid -  Do not stand under boss when she goes underwater."
         ]
       }
     ]
