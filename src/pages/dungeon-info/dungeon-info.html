@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title> {{ dungeon.dungeonName }}</ion-title>
+    <ion-title> {{ dungeon.dungeonName | uppercase }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -20,10 +20,10 @@
   <h5>Boss Tips</h5>
   <ion-card *ngFor="let boss of dungeon.bossTips">
     <ion-card-title padding-horizontal>
-      {{ boss.bossName }}
+      <b> {{ boss.bossName }} </b>
     </ion-card-title>
 
-      <ul class="dungeon-tip">
+      <ul text-justify class="dungeon-tip">
         <li *ngFor="let tip of boss.bossTips">
             {{ tip }}
         </li>

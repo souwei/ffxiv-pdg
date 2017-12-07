@@ -203,15 +203,14 @@ export default [
   ]
 },
   {
-    dungeonName: 'The Sunken Temple of Qarn',
-    dungeonTips: ["Scales of Judgement: Flame of Magic on Left, Fruit of Knowledge on Right"],
+    dungeonName: "The Sunken Temple of Qarn",
+    dungeonTips: ["Scales of Judgement: LEFT - Flame of Magic, RIGHT - Fruit of Knowledge"],
     bossTips: [
       {
         bossName: "Terotaur",
         bossTips: [
           "Kill bees adds that spawn.",
-          "Boss will cast room wide AoE doom on every player, run to the glowing platform to remove doom.",
-          "Doom will cause instant death if not removed."
+          "Boss will cast room wide AoE doom on every player, run to the glowing platform to remove doom."
         ]
       },
       {
@@ -330,28 +329,25 @@ export default [
       {
         bossName: "Towering Oliphaunt",
         bossTips: [
-          "Avoid AoE attacks around boss.",
-          "If you are targeted by the boss, run away from party. Boss will stun you and immediately starting casting AoE.",
-          "Boss will cast 'Prehistoric trumpet' that does unavoidable roomwide AoE damage, healers should be prepared to heal."
+          "[HEAL] 'Down for the count' - target and stun random player.",
+          "[HEAL] 'Prehistoric trumpet' - Room wide AoE."
 
         ]
       },
       {
         bossName: "Ser Yuhelmeric",
         bossTips: [
-          "Avoid AoEs.",
-          "Heal through 'Brain Drain' that will revive adds.",
-          "Kill adds or move them away from boss.",
-          "Boss will cast 'Death spiral' which players must stack near boss to avoid"
+          "[HEAL] 'Brain Drain' - Room wide AoE.",
+          "[ADDS] Kill adds asap",
+          "[AVOID] 'Death spiral' - Donut AoE , stack near boss"
         ]
       },
       {
         bossName: "Opinicus",
         bossTips: [
-          "Avoid line AoE - Alpine Draft attack",
-          "Boss will cast 'Free fall' on random player which healers must heal through",
-          "When boss casts 'Whirling Gaol', all players should stand beind pillar",
-          "When boss casts 'Words of Winter', player should stand between a pillar and the boss"
+          "[HEAL] Boss will cast 'Free fall' to damage random player.",
+          "[MECHANIC] 'Whirling Gaol' - stand behind rock pillar",
+          "[MECHANIC] 'Words of Winter' - stand behind rock pillar"
         ]
       }
     ]
@@ -526,18 +522,19 @@ export default [
       {
         bossName: "Ruby Princess",
         bossTips: [
-          "Boss will cast Seduce - Use box to turn into old person which will negate",
+          "Seduce - Run towards the chest to negate this attack",
           "Abyssal Volcano – AOE from boss and targeted players. Targeted players should drop away from group, then kite away from group.",
-          "Coriolis Kick – Large AOE centered from boss. Run out."
+          "Coriolis Kick – Avoid Large Circle Aoe"
         ]
       },
       {
         bossName: "Shisui Yohi",
         bossTips: [
-          "Mad stare - face character away from boss",
-          "Thick Fog - healers prepare to heal AOE room wide dmg",
-          "Kill bubble adds",
-          "Avoid standing underneath boss when she goes underwater"
+          "Mad stare - face character away from boss.",
+          "Thick Fog - Unavoidable Room wide AoE damage (Healers prepare to heal).",
+          "Adds - Kill Sharks that spawn asap.",
+          "Adds - Destroy Orbs as soon asap.",
+          "Avoid standing underneath boss when she goes underwater."
         ]
       }
     ]
@@ -564,12 +561,14 @@ export default [
       {
         bossName: "Yol",
         bossTips: [
-          "Feathercut Frontal cleave tank-buster.",
-          "Wind Unbound Group-wide AoE. Spawns a number of orbs around the outer edge of the arena. Orbs will periodically fire line AoEs.",
-          "Flutterfall Marks all players with orange markers. Players need to spread to avoid overlapping splash damage.",
-          "Eye of the Fierce Gaze attack that causes Confusion. Look away to avoid status infliction.",
-          "Avoid standing in path of Yol as he flies across the room during adds phase",
-          "Players must kill both wings to proceed. During this time, Yol will spawn three circular AoEs that will rotate clock-wise around the outer edge of the arena. Players should stay close to the center to avoid these. Once Yol's wings are shattered, the fight's mechanics will repeat until Yol is defeated."
+          "Feathercut - Frontal cleave tank-buster. [HEAL]",
+          "Wind Unbound - Group wide AoE damage that also spawns line AoE. [HEAL then AVOID]",
+          "Flutterfall - Marks all players with orange markers. Spread out to split damage. [HEAL GROUP]",
+          "Eye of the Fierce - Face character away from boss. [LOOK AWAY]",
+          "Kill the birds that spawn when boss flies away. [KILL ADDS]",
+          "Avoid standing in path of Yol as he flies across the room during adds phase. [AVOID]",
+          "When his wings become targetable, stay close to boss to avoid outside circle AoE attacks",
+          "When targetted by green marker, make sure no AoE is behind character."
         ]
       }
     ]
