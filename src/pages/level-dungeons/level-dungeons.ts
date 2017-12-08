@@ -15,6 +15,6 @@ export class LevelDungeonsPage {
   constructor(private dungeonSvr: DungeonService){ }
 
   ngOnInit(){
-  this.dungeonsCollection = this.dungeonSvr.getDungeons();
+  //this.dungeonsCollection = this.dungeonSvr.getDungeons();
   }
 }

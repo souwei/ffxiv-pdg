@@ -1,20 +1,27 @@
 import { Component } from '@angular/core';
 import { LevelDungeonsPage } from '../level-dungeons/level-dungeons';
 import { ExpertDungeonsPage } from '../expert-dungeons/expert-dungeons';
+import { DungeonsListingPage } from '../dungeons-listing/dungeons-listing';
 
 @Component({
   selector: 'page-tabs',
   template: `
     <ion-tabs (ionChange)="resetStack($event)">
-      <ion-tab [root]="levelDungeonsPage" tabTitle="Leveling Dungeon" tabIcon="leaf"></ion-tab>
-      <ion-tab [root]="expertDungeonsPage" tabTitle="Expert Dungeon" tabIcon="star"></ion-tab>
+      <ion-tab [root]="dungeonsListingPage"
+               [rootParams]="{type:'leveling'}"
+               tabTitle="Leveling Dungeons"
+               tabIcon="leaf"></ion-tab>
+
+      <ion-tab [root]="dungeonsListingPage"
+               [rootParams]="{type:'expert'}"
+               tabTitle="Expert Dungeons"
+               tabIcon="star"></ion-tab>
     </ion-tabs>
   `
 })
 
 export class TabsPage {
-  levelDungeonsPage = LevelDungeonsPage;
-  expertDungeonsPage = ExpertDungeonsPage;
+  dungeonsListingPage = DungeonsListingPage;
 
   resetStack(ev:any){
     if(ev.length()>1){

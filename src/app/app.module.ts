@@ -10,6 +10,7 @@ import { ExpertDungeonsPage } from '../pages/expert-dungeons/expert-dungeons';
 import { LevelDungeonsPage } from '../pages/level-dungeons/level-dungeons';
 import { DungeonInfoPage } from '../pages/dungeon-info/dungeon-info';
 import { DungeonService } from './services/dungeon-service';
+import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { DungeonService } from './services/dungeon-service';
     TabsPage,
     ExpertDungeonsPage,
     LevelDungeonsPage,
-    DungeonInfoPage
+    DungeonInfoPage,
+    DungeonsListingPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { DungeonService } from './services/dungeon-service';
     TabsPage,
     ExpertDungeonsPage,
     LevelDungeonsPage,
-    DungeonInfoPage
+    DungeonInfoPage,
+    DungeonsListingPage
   ],
   providers: [
     StatusBar,
