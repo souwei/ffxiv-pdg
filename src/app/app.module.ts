@@ -6,8 +6,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 
 import { TabsPage } from '../pages/tabs/tabs';
-import { ExpertDungeonsPage } from '../pages/expert-dungeons/expert-dungeons';
-import { LevelDungeonsPage } from '../pages/level-dungeons/level-dungeons';
 import { DungeonInfoPage } from '../pages/dungeon-info/dungeon-info';
 import { DungeonService } from './services/dungeon-service';
 import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing';
@@ -17,8 +15,6 @@ import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing'
   declarations: [
     MyApp,
     TabsPage,
-    ExpertDungeonsPage,
-    LevelDungeonsPage,
     DungeonInfoPage,
     DungeonsListingPage
   ],
@@ -30,8 +26,6 @@ import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing'
   entryComponents: [
     MyApp,
     TabsPage,
-    ExpertDungeonsPage,
-    LevelDungeonsPage,
     DungeonInfoPage,
     DungeonsListingPage
   ],

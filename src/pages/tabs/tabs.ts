@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { LevelDungeonsPage } from '../level-dungeons/level-dungeons';
-import { ExpertDungeonsPage } from '../expert-dungeons/expert-dungeons';
 import { DungeonsListingPage } from '../dungeons-listing/dungeons-listing';
 
 @Component({
