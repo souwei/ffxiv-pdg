@@ -9,20 +9,20 @@ export default [
     {
       bossName: "Chopper",
       bossTips: [
-        "Avoid red circle AoE atttack."
+        "[AVOID] Avoid red circle AoE atttack."
       ]
     },
     {
       bossName: "Captain Madison" ,
       bossTips: [
-        "Kill adds first in first encounter",
-        "Kill adds first as well in second encounter including the dogs that spawn at 50% hp"
+        "[ADDS] Kill adds first in first encounter",
+        "[ADDS] Kill adds first as well in second encounter including the dogs that spawn at 50% hp"
       ]
     },
     {
       bossName: "Denn the Orcatoothed",
       bossTips: [
-        "When unnatural ripples appear, interact with it to prevent adds from spawning."
+        "[GENERAL] When unnatural ripples appear, interact with it to prevent adds from spawning."
       ]
     }
   ]
@@ -34,14 +34,14 @@ export default [
     {
       bossName: "Void Soulcounter x 3" ,
       bossTips: [
-        "Boss will spawn after adds are killed."
+        "[GENERAL] Boss will spawn after adds are killed."
       ]
     },
     {
       bossName: "Galvanth the Dominator",
       bossTips: [
-        "Avoid red circle AoE that will paralyze.",
-        "Kill the adds first that the boss will summon 3 times at 75%, 50% and 25% hp."
+        "[AVOID] Avoid red circle AoE that will paralyze.",
+        "[ADDS] Kill the adds first that the boss will summon 3 times at 75%, 50% and 25% hp."
       ]
     }
   ]
@@ -53,22 +53,22 @@ export default [
     {
       bossName: "Kottos the Gigas",
       bossTips: [
-        "Waves of spriggan will spawn before boss appears."
+        "[GENERAL] Waves of spriggan will spawn before boss appears."
       ]
     },
     {
       bossName: "Ichorous Ire",
       bossTips: [
-        "Interact with 'Improved Blasting Device to spawn a Bomb and allow it to self-destruct on the boss, repeat this for 3 times then kill the boss.",
-        "Avoid red circle AoE when the Bomb explodes.",
-        "Kill spriggans that spawn immediately."
+        "[MECHANIC] Interact with 'Improved Blasting Device to spawn a Bomb and allow it to self-destruct on the boss, repeat this for 3 times then kill the boss.",
+        "[AVOID] Red circle AoE when the Bomb explodes.",
+        "[ADDS] Kill spriggans that spawn immediately."
       ]
     },
     {
       bossName: "Gyges the Great",
       bossTips: [
-        "Avoid cone AoE 'Colossal Slam'.",
-        "Boss will spawn adds that will try to summon more adds, focus on the boss unless party is undergeared, then quickly kill the adds."
+        "[AVOID] Avoid cone AoE 'Colossal Slam'.",
+        "[GENERAL] Boss will spawn adds that will try to summon more adds, focus on the boss unless party is undergeared, then quickly kill the adds."
       ]
     }
   ]
@@ -80,24 +80,25 @@ export default [
     {
       bossName: "Firemane",
       bossTips: [
-        "Kill wisps before they reach the fire pit in middle of room."
+        "[GENERAL] Kill wisps before they reach the fire pit in middle of room."
       ]
     },
     {
       bossName: "Thunderclap Guivre",
       bossTips: [
-        "Fight boss on the ramp and kill lighting sprites that spawn.",
-        "Avoid boss frontal cone AoE.",
-        "When boss runs to middle of room and becomes invulnerable, do not stay in shallow water to avoid taking damage. "
+        "[TANK] Fight boss on the ramp.",
+        "[ADDS] Kill lighting sprites that spawn ",
+        "[GENERAL] Avoid boss frontal cone AoE.",
+        "[GENERAL] When boss runs to middle of room and becomes invulnerable, do not stay in shallow water to avoid taking damage. "
       ]
     },
     {
       bossName: "Tangata",
       bossTips: [
-        "Avoid frontal AoE cone attack.",
-        "Boss will cast a pool of lava that makes him invulnerable.",
-        "Do not stand in Lava.",
-        "Kill wisps and fire sprites that spawn immediately to make him vulnerable.",
+        "[AVOID] Avoid frontal AoE cone attack.",
+        "[GENERAL] Boss will cast a pool of lava that makes him invulnerable.",
+        "[AVOID] Do not stand in Lava.",
+        "[MECHANIC] Kill wisps and fire sprites that spawn immediately to make him vulnerable.",
       ]
     }
   ]
@@ -113,17 +114,17 @@ export default [
     {
       bossName: "Coeurl O’Nine Tails",
       bossTips: [
-        "Avoid poison AoE attack.",
-        "On second encounter, adds will spawns that need to be killed immediately."
+        "[AVOID] Avoid poison AoE attack.",
+        "[ADSS] On second encounter, adds will spawns that need to be killed immediately."
       ]
     },
     {
       bossName: "Graffias",
       bossTips: [
-        "Range attack and destroy fleshy pods immediately at start of fight.",
-        "Destroy the tail immediately when it becomes targetable.",
-        "Kill the adds that spawn.",
-        "Avoid silkscreen and move out of green poison puddle."
+        "[GENERAL] Range attack and destroy fleshy pods immediately at start of fight.",
+        "[ADDS] Destroy the tail immediately when it becomes targetable.",
+        "[ADDS] Kill the adds that spawn.",
+        "[AVOID] Avoid silkscreen and move out of green poison puddle."
       ]
     }
   ]
@@ -135,24 +136,24 @@ export default [
     {
       bossName: "Manor Claviger",
       bossTips: [
-        "All party members except tank should not stand in front of boss to avoid ocassional frontal cleave attack.",
-        "Avoid AoE circle attacks."
+        "[TANK] Only tank should stand in front of boss for Frontal cleave attack.",
+        "[AVOID] Avoid AoE circle attacks."
       ]
     },
     {
-      bossName: "Manor Jester and Manor Steward",
+      bossName: "Manor Jester & Manor Steward",
       bossTips: [
-        "Kill Jester first.",
-        "Avoid AoE circle attacks."
+        "[GENERAL] Kill Jester first.",
+        "[AVOID] Avoid AoE circle attacks."
       ]
     },
     {
       bossName: "Lady Amandine",
       bossTips: [
-        "There are 4 laterns in corners of the room that should be extinguished when they are lit up to avoid occassional Aoe damage to entire party",
-        "Boss will cast Void Fire and Void Thunder on tank which can be avoided by running behind her.",
-        "Kill Bomb adds that spawn immediately.",
-        "Avoid Bomb self-destruct circle AoE."
+        "[MECHANIC] Interact with lit lanterns to stop room wide AoE.",
+        "[GENERAL] Boss will cast Void Fire and Void Thunder on tank which can be avoided by running behind her.",
+        "[ADDS] Kill Bomb adds that spawn immediately.",
+        "[AVOID] Avoid Bomb self-destruct circle AoE."
       ]
     }
   ]
@@ -164,40 +165,40 @@ export default [
     {
       bossName: "Great Yellow Pelican",
       bossTips: [
-        "Tank should face the boss   away from the party.",
-        "Avoid frontal cone attacks",
-        "Kill adds that spawn immediately.",
-        "Healers should esuna if the tank is poisoned."
+        "[TANK] Tank should face the boss away from the party.",
+        "[AVOID] Avoid frontal cone attacks",
+        "[ADDS] Kill adds that spawn immediately.",
+        "[HEAL] Healers should esuna if the tank is poisoned."
       ]
     },
     {
       bossName: "Inferno Drake",
       bossTips: [
-        "Avoid AoE cone attack.",
-        "Kill the smaller drake that appears in the fight midway."
+        "[AVOID] Avoid AoE cone attack.",
+        "[ADDS] Kill the smaller drake that appears in the fight midway."
       ]
     },
     {
       bossName: "Hellbender",
       bossTips: [
-        "Avoid standing in large circle AoE.",
-        "Occassionally, boss will trap a party member in a bubble that needs to be destroyed immediately to free the party member.",
-        "A dragon will spawn when boss is about to die, avoid standing in the way of the dragon's fire breath."
+        "[AVOID] Avoid standing in large circle AoE.",
+        "[MECHANIC] Boss will trap random player in BUBBLE, destroy BUBBLE asap.",
+        "[AVOID] Do not stand in dragon's fire breath line AoE."
       ]
     },
      {
       bossName: "Deep Jungle Coeurl",
       bossTips: [
-        "Avoid circle AoE."
+        "[AVOID] Avoid circle AoE."
       ]
     },
      {
       bossName: "Aiatar",
       bossTips: [
-        "Avoid AoE cone attack.",
-        "Boss will ocassionally turn around and face a random player to spit poison goo.",
-        "Do not stand inside poison goo area and move the dragon away from it as well.",
-        "Healers should esuna poisoned party members."
+        "[AVOID] Avoid AoE cone attack.",
+        "[HEAL] Boss will randomly turn and spit damage poison goo on player.",
+        "[AVOID] - Do not stand inside poison goo area and move the dragon away from it as well.",
+        "[HEAL] - Healers should esuna poisoned party members."
       ]
     }
   ]
@@ -209,24 +210,24 @@ export default [
       {
         bossName: "Terotaur",
         bossTips: [
-          "Kill bees adds that spawn.",
-          "Boss will cast room wide AoE doom on every player, run to the glowing platform to remove doom."
+          "[ADDS] Kill bees adds that spawn.",
+          "[MECHANIC] 'Doom' - room wide AoE , run to the GLOWING platform to REMOVE doom."
         ]
       },
       {
         bossName: "Temple Guardian",
         bossTips: [
-          "Kill Golem Soulstone then attack the boss.",
-          "Healers must be ready to heal a random party member targeted by boss for severe damage when golem soulstone respawns."
+          "[MECHANIC] Kill Golem Soulstone then attack the boss.",
+          "[GENERAL TIP] Healers be ready to heal a random party member targeted by boss when golem soulstone respawns."
         ]
       },
       {
         bossName: 'The Adjudicator',
         bossTips: [
-          "Stun boss to interupt Paralyze cast or esuna affected member,",
-          "Kill Sun Juror adds on the square platform to prevent respawn.",
-          "One DPS should enter black square to quickly take out Mythril Verge that spawn.",
-          "Avoid Laser beams.",
+          "[GENERAL TIP] Stun boss to interupt Paralyze cast or esuna affected member,",
+          "[MECHANIC] Kill Sun Juror adds on the square platform to prevent respawn.",
+          "[ADDS] One DPS should enter black square to quickly take out Mythril Verge that spawn.",
+          "[AVOID] Avoid Laser beams.",
         ]
       }
     ]
@@ -238,26 +239,27 @@ export default [
       {
         bossName: "Myrmidon Princess",
         bossTips: [
-          "Face away boss from party.",
-          "Kill Myrmidon Marshal immediately.",
-          "Healers should run around perimeter when all other adds spawn and everyone else should focus attacking the boss."
+          "[TANK] Face away boss from party.",
+          "[ADDS] Kill Myrmidon Marshal immediately.",
+          "[GENERAL TIP] Healers should run around perimeter when all other adds spawn and everyone else should focus attacking the boss."
         ]
       },
       {
         bossName: "Giant Tunnel Worm",
         bossTips: [
-          "When boss burrows, run to the outer wall.",
-          "When pulled towards the sandpit in the middle, run out again.",
-          "Healers should esuna DoT debuff casted on random player."
+          "[MECHANIC] When boss burrows, run to the outer wall.",
+          "[MECHANIC] When pulled towards the sandpit in the middle, run out again.",
+          "[HEAL] Healers should esuna DoT debuff casted on random player.",
+          "[AVOID] Try not to stand in path of boss when boss burrows under the sand."
         ]
       },
       {
         bossName: "Chimera",
         bossTips: [
-          "Run away from boss when EYES turn BLUE.",
-          "Run and stack on boss when EYES turn VIOLET.",
-          "Run away from BALL when EYES focus on TARGET.",
-          "Avoid cone AoE attacks."
+          "[AVOID] Run away from boss when EYES turn BLUE.",
+          "[AVOID] Run and stack on boss when EYES turn VIOLET.",
+          "[AVOID] Run away from BALL when EYES focus on TARGET.",
+          "[AVOID] Avoid cone AoE attacks."
         ]
       }
     ]
@@ -272,23 +274,24 @@ export default [
       {
         bossName: "Chudo-Yudo",
         bossTips: [
-          "Always stand behind or to the side of him.",
-          "Follow him to the wall when he moves."
+          "[MECHANIC] Always stand behind or to the side of him.",
+          "[MECHANIC] Follow him to the wall when he moves."
         ]
       },
       {
         bossName: "Koshchei",
         bossTips: [
-          "Tank boss away from the canons.",
-          "Avoid the tornado he casts.",
-          "Use the cannon where the other dragon descends."
+          "[TANK] Tank boss away from the canons.",
+          "[AVOID] Avoid the tornado he casts.",
+          "[MECHANIC] Use the cannon where the other dragon descends."
         ]
       },
       {
         bossName: "Isgebind",
         bossTips: [
-          "When boss flies away, avoid the ice ground AoE he casts.",
-          "Avoid consecutive circle orange AoEs."
+          "[AVOID] When boss flies away, avoid the ice ground AoE he casts.",
+          "[AVOID] Avoid consecutive circle orange AoEs.",
+          "[HEAL] 'Rime Wreath'- Unavoidable room-wide AoE."
         ]
       }
     ]
@@ -300,24 +303,24 @@ export default [
       {
         bossName: "All-Seing Eye",
         bossTips: [
-          "Always stand in purple areas near crystal to damage boss, move to another crystal when it dims.",
-          "Ignore / kill the adds that spawn.",
-          "Avoid frontal cone AoE attacks from boss and adds."
+          "[MECHANIC] Always stand in purple areas near crystal to damage boss, move to another crystal when it dims.",
+          "[ADDS] Ignore / kill the adds that spawn.",
+          "[AVOID] Avoid frontal cone AoE attacks from boss and adds."
         ]
       },
       {
         bossName: "Taulurd",
         bossTips: [
-          "Tanks should dodge boss cone AoE attacks.",
-          "Everyone should avoid the occasional ground circle AoE attacks."
+          "[AVOID] 'Double Smash/Elbow Drop' - Dodge boss cone AoE attacks.",
+          "[AVOID] occasional ground circle AoE attacks."
         ]
       },
       {
         bossName: "Batraal",
         bossTips: [
-          "Destroy the corrupted crystals that tether to the boss immediately.",
-          "Avoid column line AoE attacks.",
-          "Move out of black pools."
+          "[ADDS] Destroy the corrupted crystals that tether to the boss immediately.",
+          "[AVOID] Column line AoE attacks.",
+          "[AVOID] Move out of black pools."
         ]
       }
     ]
@@ -339,15 +342,15 @@ export default [
         bossTips: [
           "[HEAL] 'Brain Drain' - Room wide AoE.",
           "[ADDS] Kill adds asap.",
-          "[AVOID] 'Death spiral' - Donut AoE , stack near boss"
+          "[AVOID] 'Death spiral' - Donut AoE , stack near boss."
         ]
       },
       {
         bossName: "Opinicus",
         bossTips: [
           "[HEAL] Boss will cast 'Free fall' to damage random player.",
-          "[MECHANIC] 'Whirling Gaol' - stand behind rock pillar",
-          "[MECHANIC] 'Words of Winter' - stand behind rock pillar"
+          "[MECHANIC] 'Whirling Gaol' - stand behind rock pillar.",
+          "[MECHANIC] 'Words of Winter' - stand behind rock pillar."
         ]
       }
     ]
@@ -359,30 +362,29 @@ export default [
       {
         bossName: "Raskovnik",
         bossTips: [
-          "Casts Acid Rain, placing AoE circles on all players",
-          "Sweet Scent spawns Dravanian Hornets that deal no damage and slowly move towards the boss. Kill hornets before they reach the boss",
-          "Raskovnik will mark a player and draw them in after a few moments, stunning them for 2s, then cast Devour, a circular AoE attack. Hornets in range of Devour will give the boss a stacking damage increase",
-          "Casts Spit, basic room-wide AoE to be healed through"
+          "[AVOID] 'Acid Rain' - circle AoEs on all players.",
+          "[ADDS] 'Sweet Scent' - kill bee adds asap.",
+          "[AVOID] 'Devour' -  boss will target random player and suck them in then stun and cast circle AoE.",
+          "[HEAL] 'SPIT' - unavoidable room-wide AoE"
         ]
       },
       {
         bossName: "Myath",
         bossTips: [
-          "Focus down the big green add as soon as it spawns, otherwise it will cast a room-wide high-damage ability that will instantly KO most non-tanks.",
-          "Otherwise, prioritize red over blue adds. Myath will use these adds to attack, with the effect based on which color he consumes",
-          "When he consumes a blue add: spread away from the party member with a blue arrow over their head.",
-          "When he consumes a red add: stack on the party member with the red arrow on their head."
+          "[HEAL] 'Primordial Roar' - unavoidable room-wide AoE that also spawn adds.",
+          "[ADDS] Kill big green add (CHYME OF THE MOUNTAIN) asap.",
+          "[HEAL] 'Mad Dash' - targeted players should STACK together on RED marker ; SPREAD on Blue marker."
         ]
       },
       {
         bossName: "Tioman",
         bossTips: [
-          "Abyssic Buster is a moderate damage frontal-cone. Tanks should keep the boss facing away from the party",
-          "Casts Chaos Blast, placing both a column and circle AoE on every player",
-          "Comet will mark two players and spawn random AoE circles around the room. After several seconds, the marks will fade and comets will fall where the players were standing, dealing room-wide AoE damage based on proximity to these meteors. Players should move as far away as possible when they drop",
-          "Becomes invincible at ~45%. Players must DPS Tioman's wings one at a time to escape this phase (the last wing will heal to full once the first is destroyed.)",
-          "Marks a player with Heavensfall during this phase, spawning clusters of circular AoEs on the player. Marked players should move away from the party",
-          "Casts Dark Star during this phase, a room-wide AoE that must be healed through"
+          "[AVOID] 'Abyssic Buster' - Tanks should keep the boss facing away from the party.",
+          "[AVOID] 'Chaos Blast' - a column and circle AoE on every player.",
+          "[MECHANIC] 'Comet' - two players will be marked with green markers, spread apart and run as far to the edge as possible; dodge meteor AoE and drop proximity AoE that will spawn.",
+          "[ADDS] Destroy his wings when they become targetable asap.",
+          "[MECHANIC] 'Heavensfall' - random player targeted with red/orange marker ; run away from party for AoE damage.",
+          "[HEAL] 'Dark Star' - unavoidable room-wide AoE."
         ]
       }
     ]
@@ -394,25 +396,27 @@ export default [
       {
         bossName: "Rangda",
         bossTips: [
-          "Electric Cachexis is a long-cast attack that will attack everyone outside of Rangda's melee range.",
-          "When Rangda places the Prey debuff on you, run to one of the tall pillars encircling the room to transfer it.",
-          "Kill adds as they spawn."
+          "[MECHANIC] 'Electric Cachexis' - stand inside melee range of boss.",
+          "[HEAL] 'Electrocution' - boss will damage and knock back 3 random players.",
+          "[MECHANIC] 'Ionospheric Charge' -  tethered player run to tower pillar on side, other players dodge circle AoE.",
+          "[ADDS] Kill adds asap."
         ]
       },
       {
         bossName: "Gyascutus",
         bossTips: [
-          "Gyascutus will place clouds of poison around the room. For each cloud out, Gyascutus will gain a stacking damage buff.",
-          "At intervals, bombs will spawn. Allow these to eat one or two of the gas clouds to manage how many buffs the boss has before killing them. (If not killed before consuming 4 clouds, a bomb will start casting self destruct that will hit the entire room, dealing damage and applying 4 poison stacks to each party member.)"
+          "[AVOID] 'Fall of man' - boss will spit poison orb on ground.",
+          "[ADDS] Mustard Gas - allow mustard gas to consume 2-3 poison orbs before killing it."
         ]
       },
       {
         bossName: "Nidhogg",
         bossTips: [
-          "The Crimson Price will put out increasing numbers of fiery orbs (starting with 2, with one more each time the attack is repeated) that do burning damage for a short period of time, then fire off a line AoE. When the final boss faces you while casting this attack, simply take a few steps to one side.",
-          "The Sable Price will trap one player, causing them to float as it casts Sable Weave. If Sable Weave is allowed to complete, the trapped player will die.",
-          `"At about 30% health, the final boss will retreat to prepare an instant-death attack. During this time, multiple waves of adds will spawn and try to attack your NPC ally. It is important that tanks pull aggro of adds and face them away from the NPC so they do not die. Healers can keep the NPC alive by healing it. Kill adds as quickly as you can. When the final add dies, your NPC ally will put up a protective shield you must get under to avoid the instant-death attack. If your NPC dies or the adds do not die quickly enough, you will wipe."`,
-          "Keep Eistine Alive!"
+          "[HEAL] Boss will ocassionally do an Unavoidable room wide AoE.",
+          "[AVOID] 'Scarlet Price' - Fire ball that becomes straight line AoE.",
+          "[MECHANIC] 'The Sable Price' - random player will be trapped, destroy trap asap; ",
+          "[MECHANIC] Kill Adds asap and Keep Eistien Alive!",
+          "[MECHANIC] 'Massacre' -  stand inside shield that Einstein casts to stay alive."
         ]
       }
     ]
@@ -424,24 +428,25 @@ export default [
       {
         bossName: "Ser Adelphel Brightblade",
         bossTips: [
-          "If you are targeted by 'holy shield bash', run away from group, healers should heal",
-          "Avoid orbs of light that will explode"
+          "[HEAL] - 'Holy shield bash', targetted player should run away from party.",
+          "[AVOID] - Boss will spawn orbs of light that will explode."
         ]
       },
       {
         bossName: "Ser Grinnaux The Bull",
         bossTips: [
-          "Boss will target random player for a line AoE attack that will leave behind an Aetherial Tear",
-          "Avoid touching Aetherial tear",
-          "Avoid having back facing Aetherial tear",
+          "[AVOID] 'Hyperdimensional Slash' - Avoid line AoE attack that will leave behind an Aetherial Tear.",
+          "[AVOID] - DO NOT touch Aetherial tear.",
+          "[AVOID] - DO NOT have back facing Aetherial tear.",
         ]
       },
       {
         bossName: "Ser Charibert",
         bossTips: [
-          "If you are chained to another player then run in opposite directions to break the chain.",
-          "Watch out for the marching knight adds because they will apply either Slow or Bleed depending on their color.  Both are bad, but Slow is worse for this fight.",
-          "When the Dawn Knight and Dusk Knight adds spawn, they will summon Holy Flames around the room.  Quickly kill the Holy Flames."
+          "[HEAL] 'Altar Pyre' - Unavoidable room wide AoE.",
+          "[MECHANIC] If you are chained to another player, run in opposite directions to break chain.",
+          "[AVOID] Avoid standing in path of marching knights that are summoned.",
+          "[ADDS] Kill Holy flames add asap when they spawn."
         ]
       }
     ]
@@ -453,26 +458,25 @@ export default [
       {
         bossName: "Demon Tome",
         bossTips: [
-          "Dodge linear shadow AoEs alongside the regular AoE (Dark Blizzard 3) or you'll receive Heavy/Slow.",
-          "When the book closes (Disclosure), move to the opposite side to dodge a fatal mechanic.",
-          "Beware slippery floor when ice appears (Words of Winter)."
+          "[AVOID] - Dodge line shadow AoEs.",
+          "[MECHANIC] - 'Disclosure' ; move to the opposite side of book asap.",
+          "[MECHANIC] - 'Words of Winter' - Beware slippery floor when ice appears."
         ]
       },
       {
         bossName: "Byblos",
         bossTips: [
-          "The boss will become invulnerable; defeat one of the adds, and drag the tether to the boss to break his vulnerability.  Avoid the gas clouds (which destroy the tether).",
-          "He will randomly target party members with an AoE (Head Down) where he will charge towards them.  Move towards the boss before the hit to minimise DPS loss.",
-          "Standing behind him causes him to use Tail Swipe, a rear conal AoE."
+          "[MECHANIC] When boss become invulnerable; kill adds, and drag the tether to the boss ; AVOID the gas clouds that destroy tether.",
+          "[HEAl] 'Head Down' - Randomly target party members with an AoE where he will charge towards them.",
+          "[AVOID] 'Tail Swipe' - Standing behind boss will cause AoE circle attack."
         ]
       },
       {
         bossName: "The Everliving Bibliotaph",
         bossTips: [
-          "Targeted party members should drop an orb in between the platforms, and as close to the wall as possible to leave plenty of free space.",
-          "If you are damaged by one of the dropped orbs when it pulses, you will also receive a Vulnerability Up stack.",
-          "When the platforms glow (Void Summon), the equivelant amount of party members as there are small glowing circles must stand on that platform, or an add will spawn",
-          "Following Void Summon, the boss will then perform an outer AoE (Deep Darkness) which will inflict damage and Heavy.  Following this will be an inner AoE (Magic Burst) which will also knock back."
+          "[AVOID] Targeted (green marker) party members should drop an orb in between the platforms as close to the wall as possible.",
+          "[MECHANIC] 'Void Summon' - When the platforms glow , equal number of party members should step onto the plates in light circles in all platforms to avoid adds being spawned.",
+          "[AVOID] 'Deep Darkness' and 'Magic Burst' - Huge ground AoE."
         ]
       }
     ]
@@ -484,26 +488,26 @@ export default [
       {
         bossName: "Lugat",
         bossTips: [
-          "Keep close to boss to avoid 'Amorphous Applause' huge directional AOE.",
-          "Hydroball: One party member is targeted. Stack to split the damage.",
-          "Sea Swallows All -> Concussive Oscillation: When the boss sucks you in, be prepared to run out. Several AOEs will go down. Find a safe spot, but head back in to the center after so you can dodge the Amorphous Applause that follows.",
-          "Sea Swallows All -> Concussive Oscillation: When the boss sucks you in, be prepared to run out. Several AOEs will go down. Find a safe spot, but head back in to the center after so you can dodge the Amorphous Applause that follows."
+          "[AVOID] 'Amorphous Applause' - huge directional AOE.; keep closeby to boss.",
+          "[HEAL] 'Hydroball' - One party member is targeted; STACK to split the damage.",
+          "[HEAL] 'Sea Swallows All' -> 'Concussive Oscillation' - Boss sucks and damages everyone then immediately casts AoE."
         ]
       },
       {
         bossName: "The Governor",
         bossTips: [
-          "the Governor will periodically create shadow areas on the ground, which fill a large portion of the room. Stay out of those shadow areas because they will stack magic damage vulnerability.",
-          "This boss will mark a player, then do a draw-in and tether. Run far from the boss to break the tether.",
-          "This boss will summon a bunch of small versions of himself for a mass ground-covering AoE. Find a safe spot. You can continue to DPS the boss while he's sunken in the ground."
+          "[HEAL] 'Bloodyburst' - Unavoidable Room wide AoE.",
+          "[AVOID] 'Shadowflow' - Do not stand inside shadow pool.",
+          "[MECHANIC] 'Enter Night' - Random player will be targeted, drawn in and tehered; Run away from boss to avoid Debuff.",
+          "[AVOID] 'Shadowsplit' - Boss will summon a bunch of small versions of himself for a mass ground-covering AoE; Stand in safe spot."
         ]
       },
       {
         bossName: "Lorelei",
         bossTips: [
-          "Lorelei will periodically cast Virgin tears, which leaves Damage over time areas, and eventually a ring all around the room. These areas will fade after she casts either Morbid advance or Morbid Retreat",
-          "Morbid advance and Morbid retreat force your character to move forward, or backwards respectively. Position yourself accordingly so that you avoid Virgin Tears as much as possible. Note that 'forward' and 'backward' are relative to the direction you're facing; it does not mean you'll be drawn to/repelled from the boss. Pick the safest route you can based on the skill to follow.",
-          "This boss also has a decent AoE damage skill (summer melody) which is unavoidable and must be healed through."
+          "[AVOID] 'Virgin tears' - Ground AoE.",
+          "[MECHANIC] 'Morbid advance' and 'Morbid retreat' - Position character so when being forced march or retreat will not run into ground AoE.",
+          "[HEAL] - 'Summer Melody' - Unavoiable room wide AoE."
         ]
       }
     ]
@@ -515,26 +519,26 @@ export default [
       {
         bossName: "Amikiri",
         bossTips: [
-          "Target - 'Shuck'; Heal targetted player and kill tail asap.",
-          "Adds - 'Kamikiri Emerges'; Kill adds asap.",
-          "Target - 'Blue marker'; targeted players split and run to wall. ; Healers should heal"
+          "[HEAL] - 'Prey'; Random player will be targetted for damage and bound; Kill tail asap to free player.",
+          "[ADDS] - 'Kamikiri Emerges'; Kill adds asap.",
+          "[HEAL]- 'Digestive Fluid'; blue marker on targeted players - split and run to wall."
         ]
       },
       {
         bossName: "Ruby Princess",
         bossTips: [
-          "Mechanic - 'Seduce'; Run to chest",
-          "Target - 'Abyssal Volcano'; AOE from boss and targeted players. Targeted players should drop away from group, then kite away from group."
+          "[MECHANIC] 'Seduce'; Run to chest",
+          "[AVOID] 'Abyssal Volcano'; AOE from boss and targeted players. Targeted players should drop away from group, then kite away from group."
         ]
       },
       {
         bossName: "Shisui Yohi",
         bossTips: [
-          "Avoid - 'Mad stare'; Face away from boss.",
-          "Unavoidable AoE - 'Thick Fog'; Healers prepare to heal.",
-          "Adds - Kill Sharks that spawn asap.",
-          "Adds - Destroy orbs asap.",
-          "Avoid -  Do not stand under boss when she goes underwater."
+          "[AVOID] 'Mad stare'; Face away from boss.",
+          "[HEAL] 'Thick Fog'; Unavoidable Room-wide AoE.",
+          "[ADDS] Kill Sharks that spawn asap.",
+          "[ADDS] Destroy orbs asap.",
+          "[AVOID] Do not stand under boss when she goes underwater."
         ]
       }
     ]
@@ -546,10 +550,9 @@ export default [
       {
         bossName: "Galura",
         bossTips: [
-          "Heave Frontal cone AOE. Tank to dodge as required.",
-          "Crumbling Crust After a short cast time, 4 telegraphed quick casting AoEs appears around Galura. Deals moderate damage, but AoEs can stack. Melees to dodge as required.",
-          "Rush Galura will mark an off-aggro target and channel a straight line charge. Marked players should distances themselves from Galura to reduce damage taken. Other players should move out of Galura's path.",
-          "Earthquake Occurs immediately after Rush, stunning all players. Animals marked with a '!' symbol in the pen will begin charging up their AoE attacks"
+          "[AVOID] Heave Frontal cone AOE.",
+          "[HEAL] 'Rush Galura' - boss will mark an off-aggro target and channel a straight line charge; Marked players should distances themselves from Galura. Other players should move out of Galura's path.",
+          "[HEAL] Earthquake Occurs immediately after Rush, stunning all players. Animals marked with a '!' symbol in the pen will begin charging up their AoE attacks"
         ]
       },
       {
@@ -561,14 +564,14 @@ export default [
       {
         bossName: "Yol",
         bossTips: [
-          "Feathercut - Frontal cleave tank-buster. [HEAL]",
-          "Wind Unbound - Group wide AoE damage that also spawns line AoE. [HEAL then AVOID]",
-          "Flutterfall - Marks all players with orange markers. Spread out to split damage. [HEAL GROUP]",
-          "Eye of the Fierce - Face character away from boss. [LOOK AWAY]",
-          "Kill the birds that spawn when boss flies away. [KILL ADDS]",
-          "Avoid standing in path of Yol as he flies across the room during adds phase. [AVOID]",
-          "When his wings become targetable, stay close to boss to avoid outside circle AoE attacks",
-          "When targetted by green marker, make sure no AoE is behind character."
+          "[HEAL] 'Feathercut' - Frontal cleave tank-buster.",
+          "[AVOID]'Wind Unbound' - Group wide AoE damage that also spawns line AoE.",
+          "[HEAL] 'Flutterfall' - Marks all players with orange markers. Spread out to split damage.",
+          "[AVOID] 'Eye of the Fierce' - Face character away from boss.",
+          "[ADDS] Kill the birds that spawn when boss flies away.",
+          "[AVOID] Avoid standing in path of Yol as he flies across the room during adds phase.",
+          "[AVOID] When his wings become targetable, stay close to boss to avoid outside circle AoE attacks",
+          "[AVOID] When targetted by green marker, make sure no AoE is behind character."
         ]
       }
     ]
@@ -580,27 +583,26 @@ export default [
       {
         bossName: "Magna Roader",
         bossTips: [
-          "Magitek Fire II - This is a simple AoE, so just dodge out of the way.",
-          "Magitek Fire III - This one is a party wide AoE that cannot be avoided. Simply heal through it.",
-          `Wild Speed/Cannons - This is the main mechanic of the fight. The boss will charge around the arena, while soldiers man the cannons and fire them at you. Your goal is to kill the two soldiers then get on the cannons and fire them at the boss. You have to hit the boss once to make him stop dashing. Do not let the dash hit you, as it deals several thousand damage! You also only need to hit him with one cannon, so it's not necessary to kill both soldiers however it does make things safer overall. Once a soldier dies, the cannon he spawned beside becomes accessible for the party.`
+          "[HEAL] 'Magitek Fire III' - This one is a party wide AoE that cannot be avoided. Simply heal through it.",
+          `[MECHANIC] 'Wild Speed/Cannons' - The boss will charge around the arena; Kill soldiers and use cannons on boss.`
         ]
       },
       {
         bossName: "NUMBER XXIV",
         bossTips: [
-          "Stab - This is a tank buster. It deals 15-20k damage. Use cooldowns to mitigate the damage and be prepared to heal!",
-          "Gale Cut - Straightforward AoE, simply step outside the circle.",
-          `Barrier Shift - The boss will summon 3 pillars that then turn into 1 of three elements. Shortly after the boss will cast Barrier Shift. When he does, he will exclaim two elements. In order to hurt him, you have to walk into the element he didn't say. This gives you a buff allowing you to hurt him. You can also tell which element he is weak to by looking at his healthbar. Beneath it will be a buff that says what element he resists. Example: If he is immune to Fire and Ice, get the Lightning buff.`
+          "[HEAL] 'Stab' - This is a tank buster.",
+          "[AVOID] 'Gale Cut' - Straightforward AoE.",
+          `[MECHANIC] 'Barrier Shift' - Boss will summon 3 pillars, go into the pillar of elements that he did not say or is not immune to in his status bar.`
         ]
       },
       {
         bossName: "Inferno",
         bossTips: [
-          "Rahu Blaster - This is a straight line AoE. Simply get out of the way to avoid it.",
-          "Ketu & Rahu - This is a series of AoE attacks. As the fight goes on, they get increasingly complicated. There is no easy way to avoid this, simply be ready to react to the AoEs as they appear.",
-          "Arm Buffs - Every so often he will go to the edge and get a buff. When this happens, his attacks will become stronger and begin applying debuffs to the people he hits. Esuna off the debuff or heal through it.",
-          "Ketu Slash - This is a tank buster. It will hit for 15-20k damage.",
-          "Magitek Hands - Late into the fight, 3 hands will spawn. 2 will target the party. The people targeted should run away while others kill the hands. Do not let them touch you! Once you kill these 2, kill the third one ASAP. It's carrying a canister and if it deploys it, the boss gets another buff, making him even tougher than he already is."
+          "[AVOID]'Rahu Blaster' - Straight line AoE.",
+          "[AVOID]'Ketu & Rahu' - Series of AoE attacks.",
+          "[HEAL] 'Arm Buffs' - Esuna debuff on affected player.",
+          "[HEAL] 'Ketu Slash' - Tank buster.",
+          "[ADDS] 'Magitek Hands' - Avoid and kill hands that spawn asap."
         ]
       }
     ]
