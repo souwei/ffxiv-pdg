@@ -18,16 +18,24 @@
   </ion-card>
 
   <h5>Boss Tips</h5>
-  <ion-card *ngFor="let boss of dungeon.bossTips">
+  <ion-card *ngFor="let boss of dungeon.bossList">
     <ion-card-title padding-horizontal>
       <b> {{ boss.bossName }} </b>
     </ion-card-title>
 
-      <ul text-justify class="dungeon-tip">
+      <!-- <ul text-justify class="dungeon-tip">
         <li *ngFor="let tip of boss.bossTips">
             {{ tip }}
         </li>
-      </ul>
+      </ul> -->
+
+        <ion-item text-wrap *ngFor="let tip of boss.bossTips">
+          <img class="role" item-left [src]="getTipIconPath(tip.icon)" alt="">
+          <p>
+              {{ tip.desc }}
+          </p>
+        </ion-item>
+
 
   </ion-card>
 </ion-content>

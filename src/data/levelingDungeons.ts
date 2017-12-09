@@ -1,211 +1,297 @@
 export default [
   {
-  dungeonName: "Satasha Seagrot",
-  dungeonTips: [
-    "The ‘Bloody memo’ will indicate which colour of coral you will need to interact with.",
-    "Kill Clams first that spawn shade seekers."
-  ],
-  bossTips: [
-    {
-      bossName: "Chopper",
-      bossTips: [
-        "[AVOID] Avoid red circle AoE atttack."
-      ]
-    },
-    {
-      bossName: "Captain Madison" ,
-      bossTips: [
-        "[ADDS] Kill adds first in first encounter",
-        "[ADDS] Kill adds first as well in second encounter including the dogs that spawn at 50% hp"
-      ]
-    },
-    {
-      bossName: "Denn the Orcatoothed",
-      bossTips: [
-        "[GENERAL] When unnatural ripples appear, interact with it to prevent adds from spawning."
-      ]
-    }
-  ]
-},
-{
-  dungeonName: "The Tam-Tara Deepcroft",
-  dungeonTips: [],
-  bossTips: [
-    {
-      bossName: "Void Soulcounter x 3" ,
-      bossTips: [
-        "[GENERAL] Boss will spawn after adds are killed."
-      ]
-    },
-    {
-      bossName: "Galvanth the Dominator",
-      bossTips: [
-        "[AVOID] Avoid red circle AoE that will paralyze.",
-        "[ADDS] Kill the adds first that the boss will summon 3 times at 75%, 50% and 25% hp."
-      ]
-    }
-  ]
-},
-{
-  dungeonName: "Copperbell Mines",
-  dungeonTips: [],
-  bossTips: [
-    {
-      bossName: "Kottos the Gigas",
-      bossTips: [
-        "[GENERAL] Waves of spriggan will spawn before boss appears."
-      ]
-    },
-    {
-      bossName: "Ichorous Ire",
-      bossTips: [
-        "[MECHANIC] Interact with 'Improved Blasting Device to spawn a Bomb and allow it to self-destruct on the boss, repeat this for 3 times then kill the boss.",
-        "[AVOID] Red circle AoE when the Bomb explodes.",
-        "[ADDS] Kill spriggans that spawn immediately."
-      ]
-    },
-    {
-      bossName: "Gyges the Great",
-      bossTips: [
-        "[AVOID] Avoid cone AoE 'Colossal Slam'.",
-        "[GENERAL] Boss will spawn adds that will try to summon more adds, focus on the boss unless party is undergeared, then quickly kill the adds."
-      ]
-    }
-  ]
-},
-{
-  dungeonName: "Halatali",
-  dungeonTips: ["Kill 'Bombs' first and avoid AoE self-destruct."],
-  bossTips: [
-    {
-      bossName: "Firemane",
-      bossTips: [
-        "[GENERAL] Kill wisps before they reach the fire pit in middle of room."
-      ]
-    },
-    {
-      bossName: "Thunderclap Guivre",
-      bossTips: [
-        "[TANK] Fight boss on the ramp.",
-        "[ADDS] Kill lighting sprites that spawn ",
-        "[GENERAL] Avoid boss frontal cone AoE.",
-        "[GENERAL] When boss runs to middle of room and becomes invulnerable, do not stay in shallow water to avoid taking damage. "
-      ]
-    },
-    {
-      bossName: "Tangata",
-      bossTips: [
-        "[AVOID] Avoid frontal AoE cone attack.",
-        "[GENERAL] Boss will cast a pool of lava that makes him invulnerable.",
-        "[AVOID] Do not stand in Lava.",
-        "[MECHANIC] Kill wisps and fire sprites that spawn immediately to make him vulnerable.",
-      ]
-    }
-  ]
-},
-{
-  dungeonName: "The Thousand Maws of Toto-Rak",
-  dungeonTips: [
-    "Collect all Magitek Photocells including the ones that spawn from killing trash mobs.",
-    "Use ranged attacks to kill Fleshy pods that poison melee range targets.",
-    "Destroy spider webs that will close and split the party."
-  ],
-  bossTips: [
-    {
-      bossName: "Coeurl O’Nine Tails",
-      bossTips: [
-        "[AVOID] Avoid poison AoE attack.",
-        "[ADSS] On second encounter, adds will spawns that need to be killed immediately."
-      ]
-    },
-    {
-      bossName: "Graffias",
-      bossTips: [
-        "[GENERAL] Range attack and destroy fleshy pods immediately at start of fight.",
-        "[ADDS] Destroy the tail immediately when it becomes targetable.",
-        "[ADDS] Kill the adds that spawn.",
-        "[AVOID] Avoid silkscreen and move out of green poison puddle."
-      ]
-    }
-  ]
-},
-{
-  dungeonName: "Haukke Manor",
-  dungeonTips: ["Be wary of the Manor Maidservants, avoid their stun circle AoE."],
-  bossTips: [
-    {
-      bossName: "Manor Claviger",
-      bossTips: [
-        "[TANK] Only tank should stand in front of boss for Frontal cleave attack.",
-        "[AVOID] Avoid AoE circle attacks."
-      ]
-    },
-    {
-      bossName: "Manor Jester & Manor Steward",
-      bossTips: [
-        "[GENERAL] Kill Jester first.",
-        "[AVOID] Avoid AoE circle attacks."
-      ]
-    },
-    {
-      bossName: "Lady Amandine",
-      bossTips: [
-        "[MECHANIC] Interact with lit lanterns to stop room wide AoE.",
-        "[GENERAL] Boss will cast Void Fire and Void Thunder on tank which can be avoided by running behind her.",
-        "[ADDS] Kill Bomb adds that spawn immediately.",
-        "[AVOID] Avoid Bomb self-destruct circle AoE."
-      ]
-    }
-  ]
-},
-{
-  dungeonName: "Brayflox's longstop",
-  dungeonTips: [],
-  bossTips: [
-    {
-      bossName: "Great Yellow Pelican",
-      bossTips: [
-        "[TANK] Tank should face the boss away from the party.",
-        "[AVOID] Avoid frontal cone attacks",
-        "[ADDS] Kill adds that spawn immediately.",
-        "[HEAL] Healers should esuna if the tank is poisoned."
-      ]
-    },
-    {
-      bossName: "Inferno Drake",
-      bossTips: [
-        "[AVOID] Avoid AoE cone attack.",
-        "[ADDS] Kill the smaller drake that appears in the fight midway."
-      ]
-    },
-    {
-      bossName: "Hellbender",
-      bossTips: [
-        "[AVOID] Avoid standing in large circle AoE.",
-        "[MECHANIC] Boss will trap random player in BUBBLE, destroy BUBBLE asap.",
-        "[AVOID] Do not stand in dragon's fire breath line AoE."
-      ]
-    },
-     {
-      bossName: "Deep Jungle Coeurl",
-      bossTips: [
-        "[AVOID] Avoid circle AoE."
-      ]
-    },
-     {
-      bossName: "Aiatar",
-      bossTips: [
-        "[AVOID] Avoid AoE cone attack.",
-        "[HEAL] Boss will randomly turn and spit damage poison goo on player.",
-        "[AVOID] - Do not stand inside poison goo area and move the dragon away from it as well.",
-        "[HEAL] - Healers should esuna poisoned party members."
-      ]
-    }
-  ]
-},
+    dungeonName: "Satasha Seagrot",
+    dungeonTips: [
+      "The ‘Bloody memo’ will indicate which colour of coral you will need to interact with.",
+      "Kill Clams first that spawn shade seekers."
+    ],
+    bossList: [
+      {
+        bossName: "Chopper",
+        bossTips: [
+          {
+            desc: "Avoid red circle AoE atttack." ,
+            icon: "avoid"
+          }
+        ]
+      },
+      {
+        bossName: "Captain Madison" ,
+        bossTips: [
+          {
+            desc: "Kill adds first in first encounter.",
+            icon: "dps"
+          },
+          {
+            desc: "Kill adds first as well in second encounter including the dogs that spawn at 50% hp.",
+            icon: "dps"
+          }
+        ]
+      },
+      {
+        bossName: "Denn the Orcatoothed",
+        bossTips: [
+          {
+            desc: "When unnatural ripples appear, interact with it to prevent adds from spawning.",
+            icon: "general"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    dungeonName: "The Tam-Tara Deepcroft",
+    dungeonTips: [],
+    bossList: [
+      {
+        bossName: "Void Soulcounter x 3" ,
+        bossTips: [
+          {
+            desc: "Boss will spawn after adds are killed." ,
+            icon: "general"
+          }
+        ]
+      },
+      {
+        bossName: "Galvanth the Dominator",
+        bossTips: [
+          {
+            desc: "Avoid red circle AoE that will paralyze.",
+            icon: "avoid"
+          },
+          {
+            desc: "Kill the adds first that the boss will summon 3 times at 75%, 50% and 25% hp.",
+            icon: "dps"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    dungeonName: "Copperbell Mines",
+    dungeonTips: [],
+    bossList: [
+      {
+        bossName: "Kottos the Gigas",
+        bossTips: [
+          {
+            desc: "Waves of spriggan will spawn before boss appears.",
+            icon: "general"
+          }
+
+        ]
+      },
+      {
+        bossName: "Ichorous Ire",
+        bossTips: [
+          {
+            desc: "Interact with 'Improved Blasting Device to spawn a Bomb and allow it to self-destruct on the boss, repeat this for 3 times then kill the boss.",
+            icon: "mechanic"
+          },
+          {
+            desc: "Avoid Red circle AoE when the Bomb explodes.",
+            icon: "avoid"
+          },
+          {
+            desc: "Kill spriggans that spawn immediately.",
+            icon: "dps"
+          }
+        ]
+      },
+      {
+        bossName: "Gyges the Great",
+        bossTips: [
+          {
+            desc: "Avoid cone AoE 'Colossal Slam'.",
+            icon: "avoid"
+          },
+          {
+            desc: "Boss will spawn adds that will try to summon more adds, focus on the boss unless party is undergeared, then quickly kill the adds.",
+            icon: "general"
+          }
+
+        ]
+      }
+    ]
+  },
+  {
+    dungeonName: "Halatali",
+    dungeonTips: ["Kill 'Bombs' first and avoid AoE self-destruct."],
+    bossList: [
+      {
+        bossName: "Firemane",
+        bossTips: [
+          {
+            desc: "Kill wisps before they reach the fire pit in middle of room.",
+            icon: "general"
+          }
+        ]
+      },
+      {
+        bossName: "Thunderclap Guivre",
+        bossTips: [
+          {
+            desc: "Fight boss on the ramp.",
+            icon: "tank"
+          },
+          {
+            desc: "Kill lightning sprites that spawn.",
+            icon: "dps"
+          },
+          {
+            desc: "Avoid boss frontal cone AoE.",
+            icon: "general"
+          },
+          {
+            desc: "When boss runs to middle of room and becomes invulnerable, do not stay in shallow water to avoid taking damage.",
+            icon: "general"
+          }
+        ]
+      },
+      {
+        bossName: "Tangata",
+        bossTips: [
+          {
+            desc: "Avoid frontal AoE cone attack.",
+            icon: "avoid"
+          },
+          {
+            desc: "Boss will cast a pool of lava that makes him invulnerable.",
+            icon: "general"
+          },
+          {
+            desc: "Do not stand in lava",
+            icon: "avoid"
+          },
+          {
+            desc: "Kill wisps and fire sprites that spawn immediately to make him vulnerable.",
+            icon: "mechanic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    dungeonName: "The Thousand Maws of Toto-Rak",
+    dungeonList: [
+      "Collect all Magitek Photocells including the ones that spawn from killing trash mobs.",
+      "Use ranged attacks to kill Fleshy pods that poison melee range targets.",
+      "Destroy spider webs that will close and split the party."
+    ],
+    bossList: [
+      {
+        bossName: "Coeurl O’Nine Tails",
+        bossTips: [
+          {
+            desc: "Avoid poison AoE attack.",
+            icon: "avoid"
+          },
+          {
+            desc: "On second encounter, adds will spawns that need to be killed immediately.",
+            icon: "dps"
+          }
+        ]
+      },
+      {
+        bossName: "Graffias",
+        bossTips: [
+          {
+            desc: "Range attack and destroy fleshy pods immediately at start of fight.",
+            icon: "general"
+          },
+          {
+            desc: "Destroy the tail immediately when it becomes targetable.",
+            icon: "dps"
+          },
+          {
+            desc: "Kill adds that spawn",
+            icon: "dps"
+          },
+          {
+            desc: "Avoid silkscreen and move out of green poison puddle.",
+            icon: "avoid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    dungeonName: "Haukke Manor",
+    dungeonList: ["Be wary of the Manor Maidservants, avoid their stun circle AoE."],
+    bossTips: [
+      {
+        bossName: "Manor Claviger",
+        bossTips: [
+          "[TANK] Only tank should stand in front of boss for Frontal cleave attack.",
+          "[AVOID] Avoid AoE circle attacks."
+        ]
+      },
+      {
+        bossName: "Manor Jester & Manor Steward",
+        bossTips: [
+          "[GENERAL] Kill Jester first.",
+          "[AVOID] Avoid AoE circle attacks."
+        ]
+      },
+      {
+        bossName: "Lady Amandine",
+        bossTips: [
+          "[MECHANIC] Interact with lit lanterns to stop room wide AoE.",
+          "[GENERAL] Boss will cast Void Fire and Void Thunder on tank which can be avoided by running behind her.",
+          "[ADDS] Kill Bomb adds that spawn immediately.",
+          "[AVOID] Avoid Bomb self-destruct circle AoE."
+        ]
+      }
+    ]
+  },
+  {
+    dungeonName: "Brayflox's longstop",
+    dungeonList: [],
+    bossTips: [
+      {
+        bossName: "Great Yellow Pelican",
+        bossTips: [
+          "[TANK] Tank should face the boss away from the party.",
+          "[AVOID] Avoid frontal cone attacks",
+          "[ADDS] Kill adds that spawn immediately.",
+          "[HEAL] Healers should esuna if the tank is poisoned."
+        ]
+      },
+      {
+        bossName: "Inferno Drake",
+        bossTips: [
+          "[AVOID] Avoid AoE cone attack.",
+          "[ADDS] Kill the smaller drake that appears in the fight midway."
+        ]
+      },
+      {
+        bossName: "Hellbender",
+        bossTips: [
+          "[AVOID] Avoid standing in large circle AoE.",
+          "[MECHANIC] Boss will trap random player in BUBBLE, destroy BUBBLE asap.",
+          "[AVOID] Do not stand in dragon's fire breath line AoE."
+        ]
+      },
+       {
+        bossName: "Deep Jungle Coeurl",
+        bossTips: [
+          "[AVOID] Avoid circle AoE."
+        ]
+      },
+       {
+        bossName: "Aiatar",
+        bossTips: [
+          "[AVOID] Avoid AoE cone attack.",
+          "[HEAL] Boss will randomly turn and spit damage poison goo on player.",
+          "[AVOID] - Do not stand inside poison goo area and move the dragon away from it as well.",
+          "[HEAL] - Healers should esuna poisoned party members."
+        ]
+      }
+    ]
+  },
   {
     dungeonName: "The Sunken Temple of Qarn",
-    dungeonTips: ["Scales of Judgement: LEFT - Flame of Magic, RIGHT - Fruit of Knowledge"],
+    dungeonList: ["Scales of Judgement: LEFT - Flame of Magic, RIGHT - Fruit of Knowledge"],
     bossTips: [
       {
         bossName: "Terotaur",
@@ -234,7 +320,7 @@ export default [
   },
   {
     dungeonName: "Cutter's Cry",
-    dungeonTips: [],
+    dungeonList: [],
     bossTips: [
       {
         bossName: "Myrmidon Princess",
@@ -266,7 +352,7 @@ export default [
   },
   {
     dungeonName: "The Stone Vigil",
-    dungeonTips: [
+    dungeonList: [
       "Be careful of Dragon Aevis, if possible single pull them.",
       "Ice Sprites will spawn in long icy hallways."
     ],
@@ -298,7 +384,7 @@ export default [
   },
   {
     dungeonName: "Dzemael Darkhold",
-    dungeonTips: ["Avoid large exploding orange crystals."],
+    dungeonList: ["Avoid large exploding orange crystals."],
     bossTips: [
       {
         bossName: "All-Seing Eye",
@@ -327,7 +413,7 @@ export default [
   },
   {
     dungeonName: "The Dusk Vigil",
-    dungeonTips: [],
+    dungeonList: [],
     bossTips: [
       {
         bossName: "Towering Oliphaunt",
@@ -357,7 +443,7 @@ export default [
   },
   {
     dungeonName: 'Sohm Al',
-    dungeonTips: ['Sample Data'],
+    dungeonList: ['Sample Data'],
     bossTips: [
       {
         bossName: "Raskovnik",
@@ -391,7 +477,7 @@ export default [
   },
   {
     dungeonName: "The Aery",
-    dungeonTips: [],
+    dungeonList: [],
     bossTips: [
       {
         bossName: "Rangda",
@@ -423,7 +509,7 @@ export default [
   },
   {
     dungeonName: "The Vault",
-    dungeonTips: ['Sample Data'],
+    dungeonList: ['Sample Data'],
     bossTips: [
       {
         bossName: "Ser Adelphel Brightblade",
@@ -453,7 +539,7 @@ export default [
   },
   {
     dungeonName: "The Great Grubal Library",
-    dungeonTips: [],
+    dungeonList: [],
     bossTips: [
       {
         bossName: "Demon Tome",
@@ -484,7 +570,7 @@ export default [
   {
     dungeonName: "The Sirensong Sea",
     dungeonTips: [],
-    bossTips: [
+    bossList: [
       {
         bossName: "Lugat",
         bossTips: [
@@ -515,7 +601,7 @@ export default [
   {
     dungeonName: "Shisui of the Violet Tides",
     dungeonTips: [],
-    bossTips: [
+    bossList: [
       {
         bossName: "Amikiri",
         bossTips: [
@@ -546,7 +632,7 @@ export default [
   {
     dungeonName: "Bardam's Mettle",
     dungeonTips: [],
-    bossTips: [
+    bossList: [
       {
         bossName: "Galura",
         bossTips: [
@@ -579,7 +665,7 @@ export default [
   {
     dungeonName: "Castrum Abania",
     dungeonTips: ['Sample Data'],
-    bossTips: [
+    bossList: [
       {
         bossName: "Magna Roader",
         bossTips: [

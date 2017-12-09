@@ -1,8 +1,11 @@
 export interface Dungeon {
   dungeonName: string;
   dungeonTips: string[];
-  bossTips: {
+  bossList: {
     bossName: string;
-    bossTips: string[];
+    bossTips: {
+      desc: string;
+      icon: string;
+    }[];
   }[];
 }
