@@ -9,15 +9,18 @@ export default [
         bossName: "Magitek Scorpion",
         bossTips: [
           {
-            desc: "'Electromagnetic Field' - unavoidable room-wide AoE." ,
+            spellName: "ElECTROMAGNETIC FIELD",
+            desc: " - unavoidable room-wide AoE." ,
             icon: "heal"
           },
           {
+            spellName: "TARGET SEARCH",
             desc: "'Target Search' - circle AoE targetting players; run to edge and wait for target turn dark red, then run away.",
             icon: "avoid"
           },
           {
-            desc: "'Tail laser' - avoid straight line AoE.",
+            spellName: "TAIL LASER",
+            desc: " - avoid straight line AoE.",
             icon: "avoid"
           }
         ]
@@ -26,11 +29,13 @@ export default [
         bossName: "Aulus Manasina" ,
         bossTips: [
           {
-            desc: "'Mana Burst' - unavoidable room-wide AoE.",
+            spellName: "MANA BURST",
+            desc: " - unavoidable room-wide AoE.",
             icon: "heal"
           },
           {
-            desc: "'Magitek Disruptor' - move to side and then forward to dodge deathclaw and AoE; move until player reaches 'body'.",
+            spellName: "MAGITEK DISRUPTOR",
+            desc: " - move to side and then forward to dodge deathclaw and AoE; move until player reaches 'body'.",
             icon: "mechanic"
           },
           {
@@ -38,7 +43,8 @@ export default [
             icon: "dps"
           },
           {
-            desc: "'DEMI-MAGICKS' - red marker on top of targetted players, spread to split damage.",
+            spellName: "DEMI-MAGICKS",
+            desc: " - red marker on top of targetted players, spread to split damage.",
             icon: "heal"
           }
         ]
@@ -51,31 +57,38 @@ export default [
             icon: "general"
           },
           {
-            desc: "'art of the STORM' - Run away from BOSS.",
+            spellName: "art of the STORM",
+            desc: " - Run away from BOSS.",
             icon: "avoid"
           },
           {
-            desc: "'art of the SWELL - Run into BOSS and stack.",
+            spellName: "art of the SWELL",
+            desc: " - Run into BOSS and stack.",
             icon: "avoid"
           },
           {
-            desc: "art of the SWORD - stay spread out to split damage.",
+            spellName: "art of the SWORD",
+            desc: " - stay spread out to split damage.",
             icon: "heal"
           },
           {
-            desc: "'Unmoving Troika' - tankbuster ",
+            spellName: "UNMOVING TROIKA",
+            desc: " - tankbuster ",
             icon: "heal"
           },
           {
-            desc: "'Lightless spark' - target player with tether to cast large AoE; move away from party.",
+            spellName: "LIGHTLESS SPARK",
+            desc: " - target player with tether to cast large AoE; move away from party.",
             icon: "avoid"
           },
           {
-            desc: "'Concentrativity' - Unavoidable room wide AoE",
+            spellName: "CONCENTRATIVITY",
+            desc: " - Unavoidable room wide AoE",
             icon: "heal"
           },
           {
-            desc: "'STORM, SWELL, SWORD' - Unavoidable room wide AoE",
+            spellName: "STORM, SWELL, SWORD",
+            desc: "Unavoidable room wide AoE",
             icon: "heal"
           },
           {
@@ -102,7 +115,8 @@ export default [
             icon: "dps"
           },
           {
-            desc: "'Kenki Release' - Unavoidable room wide AoE.",
+            spellName: "KENKI RELEASE",
+            desc: "- Unavoidable room wide AoE.",
             icon: "heal"
           }
         ]
@@ -132,12 +146,18 @@ export default [
             icon: "mechanic"
           },
           {
-            desc: "'Inoshi-Katcho' - avoid circle AoEs.",
+            spellName: "INOSHI-KATCHO",
+            desc: "- avoid circle AoEs.",
             icon: "avoid"
           },
           {
             desc: "Kill dragonhead adds and avoid column AoEs.",
             icon: "dps"
+          },
+          {
+            spellName: "Metta-Giri",
+            desc: "unavoidable room-wide AoE",
+            icon: "heal"
           }
         ]
       }
@@ -145,7 +165,7 @@ export default [
   },
   {
     dungeonName: "The Temple of the Fist",
-    dungeonTips: ["Be careful of steppng into giant blobs of moss."],
+    dungeonTips: ["Be careful of stepping into giant blobs of moss."],
     bossList: [
       {
         bossName: "Coeurl Smriti",
@@ -164,27 +184,33 @@ export default [
         bossName: "Arbuda",
         bossTips: [
           {
-            desc: "'Cardingal Shift' - Unavoidable group wide AoE damage.",
+            spellName: "CARDINGAL SHIFT",
+            desc: " - Unavoidable group wide AoE damage.",
             icon: "heal"
           },
           {
-            desc: "'Fourfold shear' - tank buster.",
+            spellName: "FOURFOLD SHEAR",
+            desc: " - tank buster.",
             icon: "heal"
           },
           {
-            desc: "'Port and Star' - run to FRONT / BEHIND of boss.",
+            spellName: "PORT AND STAR",
+            desc: " - run to FRONT / BEHIND of boss.",
             icon: "mechanic"
           },
           {
-            desc: "'Fore and Aft' - run to SIDE of boss.",
+            spellName: "FORE AND AFT",
+            desc: " - run to SIDE of boss.",
             icon: "mechanic"
           },
           {
-            desc: "'Killer instinct' - only 1 side of boss will be open to damage, all sides deflect dmg.",
+            spellName: "KILLER INSTINCT",
+            desc: " - only 1 side of boss will be open to damage, all sides deflect dmg.",
             icon: "mechanic"
           },
           {
-            desc: "'Hellseal' - all players with be marked; run to corresponding glowing symbol platform.",
+            spellName: "HELLSEAL",
+            desc: " - all players with be marked; run to corresponding glowing symbol platform.",
             icon: "mechanic"
           }
         ]
@@ -193,31 +219,38 @@ export default [
         bossName: "Ivon Coeurlfist",
         bossTips: [
           {
-            desc: "'Spirit Wave' - unavoidable group wide AoE dmg; avoid standing in Tornado.",
+            spellName: "SPIRIT WAVE",
+            desc: "- unavoidable group wide AoE dmg; avoid standing in Tornado.",
             icon: "heal"
           },
           {
-            desc: "'Touch of Slaughter' - Reduce targeted player to very low hp.",
+            spellName: "TOUCH OF SLAUGHTER",
+            desc: "- Reduce targeted player to very low hp.",
             icon: "heal"
           },
           {
-            desc: "'Dragon wall' - dragon heads that march across room, avoid!",
+            spellName: "DRAGON WALL",
+            desc: " - dragon heads that march across room, avoid!",
             icon: "avoid"
           },
           {
-            desc: "'Silent Roar' - avoid large column AoE.",
+            spellName: "SILENT ROAR",
+            desc: " - avoid large column AoE.",
             icon: "avoid"
           },
           {
-            desc: "'Rhalgr's Piece' - proximity AoE, run to corner edges of room.",
+            spellName: "RHARGR's PIECE",
+            desc: " - proximity AoE, run to corner edges of room.",
             icon: "avoid"
           },
           {
-            desc: "'Rose of Destruction' - stack with group to share damage.",
+            spellName: "ROSE OF DESTRUCTION",
+            desc: " - stack with group to share damage.",
             icon: "mechanic"
           },
           {
-            desc: "'Furios Fist' - boss will summon orbs that player need to collect them; after he will launch unavoidable consective damage on party.",
+            spellName: "FURIOUS FIST",
+            desc: " - boss will summon orbs that player need to collect them; after he will launch unavoidable consective damage on party.",
             icon: "mechanic"
           }
         ]
@@ -236,23 +269,28 @@ export default [
             icon: "general"
           },
           {
-            desc: "'Torpedo' - tankbuster.",
+            spellName: "TORPEDO",
+            desc: " - tankbuster.",
             icon: "heal"
           },
           {
-            desc: "'Rising Seas' - unavoidable groupwide AoE dmg.",
+            spellName: "RISING SEAS",
+            desc: "- unavoidable groupwide AoE dmg.",
             icon: "heal"
           },
           {
-            desc: "'Hydro Push' - Move CLOSE to boss.",
+            spellName: "HYDRO PUSH",
+            desc: " - Move CLOSE to boss.",
             icon: "mechanic"
           },
           {
-            desc: "'Hydro Pull' - Move AWAY to opposite side of boss.",
+            spellName: "HYDRO PULL",
+            desc: " - Move AWAY to opposite side of boss.",
             icon: "mechanic"
           },
           {
-            desc: "'Bloody Puddle' - spread apart to split damage and kite orbs away.",
+            spellName: "BLOODY PUDDLE",
+            desc: " - spread apart to split damage and kite orbs away.",
             icon: "heal"
           }
 
@@ -262,7 +300,8 @@ export default [
         bossName: "The Old One",
         bossTips: [
           {
-            desc: "'Mystic Light / Flame' - circle / cone AoE.",
+            spellName: "MYSTIC LIGHT / MYSTICT FLAME",
+            desc: " - circle / cone AoE.",
             icon: "avoid"
           },
           {
@@ -270,7 +309,8 @@ export default [
             icon: "dps"
           },
           {
-            desc: "'Shifting Light' - players transformed into Spiggans; kill adds with action ability to drop bombs on.",
+            spellName: "SHIFTING LIGHT",
+            desc: " - players transformed into Spiggans; kill adds with action ability to drop bombs on.",
             icon: "mechanic"
           }
         ]
@@ -287,19 +327,23 @@ export default [
             icon: "general"
           },
           {
-            desc: "'The Spin' - proximity AoE ; run away from boss.",
+            spellName: "THE SPIN",
+            desc: " - proximity AoE ; run away from boss.",
             icon: "heal"
           },
           {
-            desc: "'Ring of Chaos' - Donut AoE ; stack near boss to avoid other players",
+            spellName: "RING OF CHAOS",
+            desc: " - Donut AoE ; stack near boss to avoid other players",
             icon: "avoid"
           },
           {
-            desc: "'Eye of the Fire' - Gaze attack; FACE character AWAY from boss.",
+            spellName: "EYE OF THE FIRE",
+            desc: " - Gaze attack; FACE character AWAY from boss.",
             icon: "avoid"
           },
           {
-            desc: "'Cross of Chaos' - Cross shaped AoE attack; move to a spot and stop moving.",
+            spellName: "CROSS OF CHAOS",
+            desc: " - Cross shaped AoE attack; move to a spot and stop moving.",
             icon: "avoid"
           },
           {

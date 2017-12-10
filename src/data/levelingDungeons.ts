@@ -365,6 +365,11 @@ export default [
           {
             desc: "Kill bee adds that spawn.",
             icon: "dps"
+          },
+          {
+            spellName: "DOOM",
+            desc: " - players must run to glowing platform to remove 'doom' debuff or will cause instant death.",
+            icon: "mechanic"
           }
         ]
       },
@@ -498,6 +503,7 @@ export default [
             icon: "tank"
           },
           {
+            spellName: "TYPHOON",
             desc: "Avoid the tornado AoE.",
             icon: "avoid"
           },
@@ -519,7 +525,8 @@ export default [
             icon: "avoid"
           },
           {
-            desc: "'Rime Wreath'- Unavoidable room-wide AoE.",
+            spellName: "RIME WREATH",
+            desc: " - Unavoidable room-wide AoE.",
             icon: "heal"
           }
         ]
@@ -551,7 +558,8 @@ export default [
         bossName: "Taulurd",
         bossTips: [
           {
-            desc: "'Double Smash/Elbow Drop' - Dodge boss cone AoE attacks.",
+            spellName: "DOUBLE SMASH / ELBOW DROP",
+            desc: " - Dodge boss cone AoE attacks.",
             icon: "avoid"
           },
           {
@@ -587,11 +595,13 @@ export default [
         bossName: "Towering Oliphaunt",
         bossTips: [
           {
-            desc: "'Down for the count' - target and stun random player.",
+            spellName: "DOWN FOR THE COUNT",
+            desc: " - target and stun random player.",
             icon: "heal"
           },
           {
-            desc: "'Prehistoric trumpet' - Room wide AoE.",
+            spellName: "PREHISTORIC TRUMPET",
+            desc: " - Room wide AoE.",
             icon: "heal"
           }
         ]
@@ -600,7 +610,8 @@ export default [
         bossName: "Ser Yuhelmeric",
         bossTips: [
           {
-            desc: "'Brain Drain' - Room wide AoE.",
+            spellName: "BRAIN DRAIN",
+            desc: " - Room wide AoE.",
             icon: "heal"
           },
           {
@@ -608,7 +619,8 @@ export default [
             icon: "dps"
           },
           {
-            desc: "'Death spiral' - Donut AoE , stack near boss.",
+            spellName: "DEATH SPIRAL",
+            desc: " - Donut AoE , stack near boss.",
             icon: "avoid"
           }
         ]
@@ -617,15 +629,18 @@ export default [
         bossName: "Opinicus",
         bossTips: [
           {
-            desc: "Boss will cast 'Free fall' to damage random player.",
+            spellName: "FREE FALL",
+            desc: "Random targeted player will be hit by boss for dmg.",
             icon: "heal"
           },
           {
-            desc: "'Whirling Gaol' - stand behind rock pillar.",
+            spellName: "WHIRLING GAOL",
+            desc: " - stand behind rock pillar.",
             icon: "mechanic"
           },
           {
-            desc: "'Words of Winter' - Donut AoE , stack near boss.",
+            spellName: "WINDS OF WINTER",
+            desc: " - Allow a rock pillar to stand between you and boss.",
             icon: "mechanic"
           }
         ]
@@ -713,15 +728,18 @@ export default [
         bossName: "Rangda",
         bossTips: [
           {
-            desc: "'Electric Cachexis' - stand inside melee range of boss.",
+            spellName: "ELECTRIC CACHEXIS",
+            desc: " - stand inside melee range of boss.",
             icon: "avoid"
           },
           {
-            desc: "'Electrocution' - boss will damage and knock back 3 random players.",
+            spellName: "ELECTROCUTION",
+            desc: " - boss will damage and knock back 3 random players.",
             icon: "heal"
           },
           {
-            desc: "'Ionospheric Charge' -  tethered player run to tower pillar on side, other players dodge circle AoE.",
+            spellName: "IONOSPHERIC CHARGE",
+            desc: " -  tethered player run to tower pillar on side, other players dodge circle AoE.",
             icon: "mechanic"
           },
           {
@@ -734,7 +752,8 @@ export default [
         bossName: "Gyascutus",
         bossTips: [
           {
-            desc: "'Fall of man' - boss will spit poison orb on ground.",
+            spellName: "FALL OF MAN",
+            desc: " - boss will spit poison orb on ground.",
             icon: "avoid"
           },
           {
@@ -751,11 +770,13 @@ export default [
             icon: "heal"
           },
           {
-            desc: "'Scarlet Price' - Fire ball that becomes straight line AoE.",
+            spellName: "SCARLET PRICE",
+            desc: " - Boss will spit Fire ball(s) that becomes straight line AoE.",
             icon: "avoid"
           },
           {
-            desc: "'The Sable Price' - random player will be trapped, destroy trap asap; ",
+            spellName: "THE SABLE PRICE",
+            desc: " - random player will be trapped, destroy trap asap; ",
             icon: "mechanic"
           },
           {
@@ -778,7 +799,8 @@ export default [
         bossName: "Ser Adelphel Brightblade",
         bossTips: [
           {
-            desc: "Holy shield bash', targetted player should run away from party.",
+            spellName: "HOLY SHIELD BASH",
+            desc: " - targetted player should run away from party.",
             icon: "heal"
           },
           {
@@ -791,7 +813,8 @@ export default [
         bossName: "Ser Grinnaux The Bull",
         bossTips: [
           {
-            desc: "'Hyperdimensional Slash' - Avoid line AoE attack that will leave behind an Aetherial Tear.",
+            spellName: "HYPERDIMENSIONAL SLASH",
+            desc: " - Avoid line AoE attack that will leave behind an Aetherial Tear.",
             icon: "avoid"
           },
           {
@@ -808,10 +831,12 @@ export default [
         bossName: "Ser Charibert",
         bossTips: [
           {
-            desc: "'Altar Pyre' - Unavoidable room wide AoE.",
+            spellName: "ALTAR PYRE",
+            desc: " - Unavoidable room wide AoE.",
             icon: "heal"
           },
           {
+            spellName: "HOLY CHAIN",
             desc: "If you are chained to another player, run in opposite directions to break chain.",
             icon: "mechanic"
           },
@@ -820,7 +845,8 @@ export default [
             icon: "avoid"
           },
           {
-            desc: "Kill Holy flames asap when they spawn.",
+            spellName: "HOLY FLAMES",
+            desc: "- Kill Holy flames asap when they spawn.",
             icon: "dps"
           }
         ]
@@ -839,11 +865,13 @@ export default [
             icon: "avoid"
           },
           {
-            desc: "'Disclosure' ; move to the opposite side of book asap.",
+            spellName: "DISCLOSURE",
+            desc: " - move to the opposite side of book asap.",
             icon: "mechanic"
           },
           {
-            desc: "'Words of Winter' - Beware slippery floor when ice appears.",
+            spellName: "WORDS OF WINTER",
+            desc: "- Beware slippery floor when ice appears.",
             icon: "general"
           }
         ]
@@ -856,11 +884,13 @@ export default [
             icon: "mechanic"
           },
           {
-            desc: "'Head Down' - Randomly target party members and charge towards them and damage.",
+            spellName: "HEAD DOWN",
+            desc: " - Randomly target party members and charge towards them and damage.",
             icon: "heal"
           },
           {
-            desc: "'Tail Swipe' - Standing behind boss will cause AoE circle attack.",
+            spellName: "TAIL SWIPE",
+            desc: " - Standing behind boss will cause AoE circle attack.",
             icon: "avoid"
           }
         ]
@@ -873,11 +903,13 @@ export default [
             icon: "avoid"
           },
           {
-            desc: "'Void Summon' - When the platforms glow , equal number of party members should step onto the plates in light circles in all platforms to avoid adds being spawned.",
+            spellName: "VOID SUMMON",
+            desc: " - When the platforms glow , equal number of party members should step onto the plates in light circles in all platforms to avoid adds being spawned.",
             icon: "mechanic"
           },
           {
-            desc: "'Deep Darkness' and 'Magic Burst' - Huge ground AoE.",
+            spellName: "DEEP DARKNESS & MAGIC BURST",
+            desc: " - Huge ground AoE.",
             icon: "avoid"
           }
         ]
@@ -892,15 +924,18 @@ export default [
         bossName: "Lugat",
         bossTips: [
           {
-            desc: "'Amorphous Applause' - huge directional AOE ; keep closeby to boss.",
+            spellName: "AMORPHOUS APPLAUSE",
+            desc: " - huge directional AOE ; keep closeby to boss.",
             icon: "avoid"
           },
           {
-            desc: "'Hydroball' - One party member is targeted; STACK to split the damage.",
+            spellName: "HYDROBALL",
+            desc: " - One party member is targeted; STACK to split the damage.",
             icon: "heal"
           },
           {
-            desc: "'Sea Swallows All' -> 'Concussive Oscillation' - Boss sucks and damages everyone then immediately casts AoE.",
+            spellName: "SEA SWALLOWS ALL --> CONCUSSIVE OSCILLATION",
+            desc: " - Boss sucks and damages everyone then immediately casts AoE.",
             icon: "heal"
           }
         ]
@@ -909,19 +944,23 @@ export default [
         bossName: "The Governor",
         bossTips: [
           {
-            desc: "'Bloodyburst' - Unavoidable Room wide AoE.",
+            spellName: "BLOOD BURST",
+            desc: " - Unavoidable Room wide AoE.",
             icon: "heal"
           },
           {
-            desc: "'Shadowflow' - Do not stand inside shadow pool.",
+            spellName: "SHADOWFLOW",
+            desc: " - Do not stand inside shadow pool.",
             icon: "avoid"
           },
           {
-            desc: "'Enter Night' - Random player will be targeted, drawn in and tehered; Run away from boss to avoid Debuff.",
+            spellName: "ENTER NIGHT",
+            desc: " - Random player will be targeted, drawn in and tehered; Run away from boss to avoid Debuff.",
             icon: "mechanic"
           },
           {
-            desc: "'Shadowsplit' - Boss will summon a bunch of small versions of himself for a mass ground-covering AoE; Stand in safe spot.",
+            spellName: "SHADOWSPLIT",
+            desc: " - Boss will summon a bunch of small versions of himself for a mass ground-covering AoE; Stand in safe spot.",
             icon: "avoid"
           }
         ]
@@ -930,15 +969,18 @@ export default [
         bossName: "Lorelei",
         bossTips: [
           {
-            desc: "'Virgin tears' - Ground AoE.",
+            spellName: "VIRGIN TEARS",
+            desc: " - Avoid Ground AoE.",
             icon: "avoid"
           },
           {
-            desc: "'Morbid advance' and 'Morbid retreat' - Position character so when being forced march or retreat will not run into ground AoE.",
+            spellName: "MORBID ADVANCE & MORBID RETREAT",
+            desc: " - Position character so when being forced march or retreat will not run into ground AoE.",
             icon: "mechanic"
           },
           {
-            desc: "'Summer Melody' - Unavoiable room wide AoE.",
+            spellName: "SUMMER MELODY",
+            desc: " - Unavoidable room wide AoE.",
             icon: "heal"
           }
         ]
@@ -954,17 +996,17 @@ export default [
         bossTips: [
           {
             spellName: "PREY",
-            desc: "- Random player will be targetted for damage and bound; Kill tail asap to free player.",
+            desc: " - Random player will be targetted for damage and bound; Kill tail asap to free player.",
             icon: "heal"
           },
           {
             spellName: "KAMIKIRI EMERGES",
-            desc: "- Kill adds asap.",
+            desc: " - Kill adds asap.",
             icon: "dps"
           },
           {
             spellName: "DIGESTIVE FLUID",
-            desc: "- blue marker on targeted players - split and run to wall.",
+            desc: " - blue marker on targeted players - split and run to wall.",
             icon: "heal"
           }
         ]
@@ -974,7 +1016,7 @@ export default [
         bossTips: [
           {
             spellName: "SEDUCE",
-            desc: "- Run to chest",
+            desc: " - Run to chest",
             icon: "mechanic"
           },
           {
@@ -989,7 +1031,7 @@ export default [
         bossTips: [
           {
             spellName: "MAD STARE",
-            desc: "- gaze attack ; Face away from boss.",
+            desc: " - gaze attack ; Face away from boss.",
             icon: "avoid"
           },
           {
@@ -1025,11 +1067,12 @@ export default [
             icon: "avoid"
           },
           {
-            desc: "'Rush Galura' - boss will mark an off-aggro target and channel a straight line charge; Marked players should distances themselves from Galura. Other players should move out of Galura's path.",
+            spellName: "RUSH GALURA",
+            desc: " - boss will mark an off-aggro target and channel a straight line charge; Marked players should distances themselves from Galura. Other players should move out of Galura's path.",
             icon: "heal"
           },
           {
-            desc: "Earthquake Occurs immediately after Rush, stunning all players. Animals marked with a '!' symbol in the pen will begin charging up their AoE attacks",
+            desc: "Earthquake Occurs immediately after Rush, stunning all players. Animals marked with a '!' symbol in the pen will begin charging up their AoE attacks.",
             icon: "heal"
           },
         ]
@@ -1059,19 +1102,23 @@ export default [
         bossName: "Yol",
         bossTips: [
           {
-            desc: "'Feathercut' - Frontal cleave tank-buster.",
+            spellName: "FEATHERCUT",
+            desc: " - Frontal cleave tank-buster.",
             icon: "heal"
           },
           {
-            desc: "'Wind Unbound' - Group wide AoE damage that also spawns line AoE.",
+            spellName : "WIND UNBOUND",
+            desc: " - Group wide AoE damage that also spawns line AoE.",
             icon: "avoid"
           },
           {
-            desc: "'Flutterfall' - Marks all players with orange markers. Spread out to split damage.",
+            spellName: "FLUTTERFALL",
+            desc: "' - Marks all players with orange markers. Spread out to split damage.",
             icon: "heal"
           },
           {
-            desc: "'Eye of the Fierce' - Face character away from boss.",
+            spellName: "EYE OF THE FIERCE",
+            desc: " - Gaze attack; Face character away from boss.",
             icon: "avoid"
           },
           {
@@ -1102,7 +1149,8 @@ export default [
         bossName: "Magna Roader",
         bossTips: [
           {
-            desc: "'Magitek Fire III' - This one is a party wide AoE that cannot be avoided. Simply heal through it.",
+            spellName: "MAGITEK FIRE III",
+            desc: " - Unavoidable roomwide AoE dmg.",
             icon: "heal"
           },
           {
@@ -1115,15 +1163,18 @@ export default [
         bossName: "NUMBER XXIV",
         bossTips: [
           {
-            desc: "'Stab' - This is a tank buster.",
+            spellName: "STAB",
+            desc: " - This is a tank buster.",
             icon: "heal"
           },
           {
-            desc: "'Gale Cut' - Straightforward AoE.",
+            spellName: "GALE CUT",
+            desc: " - Straightforward AoE.",
             icon: "dps"
           },
           {
-            desc: "'Barrier Shift' - Boss will summon 3 pillars, go into the pillar of elements that he did not say or is not immune to in his status bar.",
+            spellName: "BARRIER SHIFT",
+            desc: " - Boss will summon 3 pillars, go into the pillar of elements that he did not say or is not immune to in his status bar.",
             icon: "mechanic"
           }
         ]
@@ -1132,23 +1183,28 @@ export default [
         bossName: "Inferno",
         bossTips: [
           {
-            desc: "'Rahu Blaster' - Straight line AoE.",
+            spellName: "RAHU BLASTER",
+            desc: " - Straight line AoE.",
             icon: "avoid"
           },
           {
-            desc: "'Ketu & Rahu' - Series of AoE attacks.",
+            spellName: "KETU & RAHU",
+            desc: " - Series of AoE attacks.",
             icon: "avoid"
           },
           {
-            desc: "'Arm Buffs' - Esuna debuff on affected player.",
+            spellName: "ARMS BUFF",
+            desc: " - Esuna debuff on affected player.",
             icon: "heal"
           },
           {
-            desc: "Ketu Slash' - Tank buster.",
+            spellName: "KETU SLASH",
+            desc: " - Tank buster.",
             icon: "heal"
           },
           {
-            desc: "'Magitek Hands' - Avoid and kill hands that spawn asap.",
+            spellName: "MAGITEK HANDS",
+            desc: " - Avoid and kill hands that spawn asap.",
             icon: "dps"
           }
         ]
