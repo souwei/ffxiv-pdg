@@ -88,26 +88,55 @@ export default [
   },
   {
     dungeonName: "Kugane Castle",
-    dungeonTips: ["Break the barriers.","Destroy the Orbs.","Find the Rosary."],
+    dungeonTips: ["No special instructions."],
     bossList: [
       {
-        bossName: "Void Soulcounter x 3" ,
+        bossName: "Zuiko-maru" ,
         bossTips: [
           {
-            desc: "Boss will spawn after adds are killed." ,
-            icon: "general"
+            desc: "Stack together when someone is targetted with yellow indicator(stack marker) to share damage." ,
+            icon: "mechanic"
+          },
+          {
+            desc: "When tethered by adds, both targeted players should go to side of room together and kill adds asap.",
+            icon: "dps"
+          },
+          {
+            desc: "'Kenki Release' - Unavoidable room wide AoE.",
+            icon: "heal"
           }
         ]
       },
       {
-        bossName: "Galvanth the Dominator",
+        bossName: "Dojun-maru",
         bossTips: [
           {
-            desc: "Avoid red circle AoE that will paralyze.",
+            desc: "Narrow line column AoEs.",
             icon: "avoid"
           },
           {
-            desc: "Kill the adds first that the boss will summon 3 times at 75%, 50% and 25% hp.",
+            desc: "Kill ninja adds asap.",
+            icon: "dps"
+          },
+          {
+            desc: "When targeted with electric circle, spread out to split damage.",
+            icon: "avoid"
+          }
+        ]
+      },
+      {
+        bossName: "Yojimbo",
+        bossTips: [
+          {
+            desc: "Interact with piles of gold asap.",
+            icon: "mechanic"
+          },
+          {
+            desc: "'Inoshi-Katcho' - avoid circle AoEs.",
+            icon: "avoid"
+          },
+          {
+            desc: "Kill dragonhead adds and avoid column AoEs.",
             icon: "dps"
           }
         ]
@@ -116,45 +145,80 @@ export default [
   },
   {
     dungeonName: "The Temple of the Fist",
-    dungeonTips: ["Let tank lead the way."],
+    dungeonTips: ["Be careful of steppng into giant blobs of moss."],
     bossList: [
       {
-        bossName: "Kottos the Gigas",
+        bossName: "Coeurl Smriti",
         bossTips: [
           {
-            desc: "Waves of spriggan will spawn before boss appears.",
-            icon: "general"
+            desc: "When boss summons minion Coeurl Sruti - it is advised to kill them at the same time.",
+            icon: "dps"
+          },
+          {
+            desc: "if one of the Coeurl is killed, the other will use 'Electric Burst' - Unavoidable Group wide AoE.",
+            icon: "heal"
           }
-
         ]
       },
       {
-        bossName: "Ichorous Ire",
+        bossName: "Arbuda",
         bossTips: [
           {
-            desc: "Interact with 'Improved Blasting Device to spawn a Bomb and allow it to self-destruct on the boss, repeat this for 3 times then kill the boss.",
+            desc: "'Cardingal Shift' - Unavoidable group wide AoE damage.",
+            icon: "heal"
+          },
+          {
+            desc: "'Fourfold shear' - tank buster.",
+            icon: "heal"
+          },
+          {
+            desc: "'Port and Star' - run to FRONT / BEHIND of boss.",
             icon: "mechanic"
           },
           {
-            desc: "Avoid Red circle AoE when the Bomb explodes.",
-            icon: "avoid"
+            desc: "'Fore and Aft' - run to SIDE of boss.",
+            icon: "mechanic"
           },
           {
-            desc: "Kill spriggans that spawn immediately.",
-            icon: "dps"
+            desc: "'Killer instinct' - only 1 side of boss will be open to damage, all sides deflect dmg.",
+            icon: "mechanic"
+          },
+          {
+            desc: "'Hellseal' - all players with be marked; run to corresponding glowing symbol platform.",
+            icon: "mechanic"
           }
         ]
       },
       {
-        bossName: "Gyges the Great",
+        bossName: "Ivon Coeurlfist",
         bossTips: [
           {
-            desc: "Avoid cone AoE 'Colossal Slam'.",
+            desc: "'Spirit Wave' - unavoidable group wide AoE dmg; avoid standing in Tornado.",
+            icon: "heal"
+          },
+          {
+            desc: "'Touch of Slaughter' - Reduce targeted player to very low hp.",
+            icon: "heal"
+          },
+          {
+            desc: "'Dragon wall' - dragon heads that march across room, avoid!",
             icon: "avoid"
           },
           {
-            desc: "Boss will spawn adds that will try to summon more adds, focus on the boss unless party is undergeared, then quickly kill the adds.",
-            icon: "general"
+            desc: "'Silent Roar' - avoid large column AoE.",
+            icon: "avoid"
+          },
+          {
+            desc: "'Rhalgr's Piece' - proximity AoE, run to corner edges of room.",
+            icon: "avoid"
+          },
+          {
+            desc: "'Rose of Destruction' - stack with group to share damage.",
+            icon: "mechanic"
+          },
+          {
+            desc: "'Furios Fist' - boss will summon orbs that player need to collect them; after he will launch unavoidable consective damage on party.",
+            icon: "mechanic"
           }
         ]
       }
@@ -162,45 +226,85 @@ export default [
   },
   {
     dungeonName: "The Drowned City of Skalla",
-    dungeonTips: ["Let tank lead the way."],
+    dungeonTips: ["No special instructions."],
     bossList: [
       {
-        bossName: "Kottos the Gigas",
+        bossName: "Kelpie",
         bossTips: [
           {
-            desc: "Waves of spriggan will spawn before boss appears.",
+            desc: "Do not stand in outer edge of arena.",
             icon: "general"
+          },
+          {
+            desc: "'Torpedo' - tankbuster.",
+            icon: "heal"
+          },
+          {
+            desc: "'Rising Seas' - unavoidable groupwide AoE dmg.",
+            icon: "heal"
+          },
+          {
+            desc: "'Hydro Push' - Move CLOSE to boss.",
+            icon: "mechanic"
+          },
+          {
+            desc: "'Hydro Pull' - Move AWAY to opposite side of boss.",
+            icon: "mechanic"
+          },
+          {
+            desc: "'Bloody Puddle' - spread apart to split damage and kite orbs away.",
+            icon: "heal"
           }
 
         ]
       },
       {
-        bossName: "Ichorous Ire",
+        bossName: "The Old One",
         bossTips: [
           {
-            desc: "Interact with 'Improved Blasting Device to spawn a Bomb and allow it to self-destruct on the boss, repeat this for 3 times then kill the boss.",
-            icon: "mechanic"
-          },
-          {
-            desc: "Avoid Red circle AoE when the Bomb explodes.",
+            desc: "'Mystic Light / Flame' - circle / cone AoE.",
             icon: "avoid"
           },
           {
-            desc: "Kill spriggans that spawn immediately.",
+            desc: "Kill adds that spawn asap.",
             icon: "dps"
+          },
+          {
+            desc: "'Shifting Light' - players transformed into Spiggans; kill adds with action ability to drop bombs on.",
+            icon: "mechanic"
           }
         ]
       },
       {
-        bossName: "Gyges the Great",
+        bossName: "Hrodric Poisontonguex",
         bossTips: [
           {
-            desc: "Avoid cone AoE 'Colossal Slam'.",
+            desc: "When boss raises his ARMS ; move to BEHIND boss.",
             icon: "avoid"
           },
           {
-            desc: "Boss will spawn adds that will try to summon more adds, focus on the boss unless party is undergeared, then quickly kill the adds.",
+            desc: "When boss raises his TAIL ; move to FRONT of boss.",
             icon: "general"
+          },
+          {
+            desc: "'The Spin' - proximity AoE ; run away from boss.",
+            icon: "heal"
+          },
+          {
+            desc: "'Ring of Chaos' - Donut AoE ; stack near boss to avoid other players",
+            icon: "avoid"
+          },
+          {
+            desc: "'Eye of the Fire' - Gaze attack; FACE character AWAY from boss.",
+            icon: "avoid"
+          },
+          {
+            desc: "'Cross of Chaos' - Cross shaped AoE attack; move to a spot and stop moving.",
+            icon: "avoid"
+          },
+          {
+            desc: "When boss faces random player, quickly move away from his view to avoid huge dmg.",
+            icon: "avoid"
           }
         ]
       }

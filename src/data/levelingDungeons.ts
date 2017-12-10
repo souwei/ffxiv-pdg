@@ -582,7 +582,7 @@ export default [
   {
     dungeonName: "The Dusk Vigil",
     dungeonTips: ["Tanks shoud quickly pick up Mylodons."],
-    bossTips: [
+    bossList: [
       {
         bossName: "Towering Oliphaunt",
         bossTips: [
@@ -983,7 +983,7 @@ export default [
         bossName: "Shisui Yohi",
         bossTips: [
           {
-            desc: "'Mad stare'; Face away from boss.",
+            desc: "'Mad stare' - gaze attack ; Face away from boss.",
             icon: "avoid"
           },
           {
