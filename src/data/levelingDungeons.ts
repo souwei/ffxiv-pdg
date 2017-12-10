@@ -953,15 +953,18 @@ export default [
         bossName: "Amikiri",
         bossTips: [
           {
-            desc: "'Prey'; Random player will be targetted for damage and bound; Kill tail asap to free player.",
+            spellName: "PREY",
+            desc: "- Random player will be targetted for damage and bound; Kill tail asap to free player.",
             icon: "heal"
           },
           {
-            desc: "'Kamikiri Emerges'; Kill adds asap.",
+            spellName: "KAMIKIRI EMERGES",
+            desc: "- Kill adds asap.",
             icon: "dps"
           },
           {
-            desc: "'Digestive Fluid'; blue marker on targeted players - split and run to wall.",
+            spellName: "DIGESTIVE FLUID",
+            desc: "- blue marker on targeted players - split and run to wall.",
             icon: "heal"
           }
         ]
@@ -970,11 +973,13 @@ export default [
         bossName: "Ruby Princess",
         bossTips: [
           {
-            desc: "'Seduce'; Run to chest",
+            spellName: "SEDUCE",
+            desc: "- Run to chest",
             icon: "mechanic"
           },
           {
-            desc: "'Abyssal Volcano'; AOE from boss and targeted players. Targeted players should drop away from group, then kite away from group.",
+            spellName: "ABYSSAL VOLCANO",
+            desc: " - AOE from boss and targeted players. Targeted players should drop away from group, then kite away from group.",
             icon: "avoid"
           }
         ]
@@ -983,11 +988,13 @@ export default [
         bossName: "Shisui Yohi",
         bossTips: [
           {
-            desc: "'Mad stare' - gaze attack ; Face away from boss.",
+            spellName: "MAD STARE",
+            desc: "- gaze attack ; Face away from boss.",
             icon: "avoid"
           },
           {
-            desc: "'Thick Fog'; Unavoidable Room-wide AoE.",
+            spellName: "THICK FOG",
+            desc: "Unavoidable Room-wide AoE.",
             icon: "heal"
           },
           {

@@ -5,6 +5,7 @@ export interface Dungeon {
     bossName: string;
     bossTips: {
       desc: string;
+      spellName?: string;
       icon: string;
     }[];
   }[];

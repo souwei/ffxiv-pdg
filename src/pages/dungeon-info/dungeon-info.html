@@ -21,6 +21,7 @@
         <ion-item text-wrap *ngFor="let tip of boss.bossTips">
           <img class="role" item-left [src]="getTipIconPath(tip.icon)" alt="">
           <p>
+              <span *ngIf="tip.spellName" class="spell-name"> '{{ tip.spellName }}'</span>
               {{ tip.desc }}
           </p>
         </ion-item>
