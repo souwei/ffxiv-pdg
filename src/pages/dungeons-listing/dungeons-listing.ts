@@ -13,7 +13,7 @@ export class DungeonsListingPage implements OnInit{
   dungeonPage = DungeonInfoPage;
   selectedCategory: string;
 
-  constructor(private dungeonSvr: DungeonService, private navParams: NavParams){ }
+  constructor(private dungeonSvr: DungeonService, private navParams:  NavParams){ }
 
   ngOnInit(){
     this.selectedCategory = this.navParams.data['type'];

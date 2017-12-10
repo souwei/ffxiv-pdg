@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 
+import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DungeonInfoPage } from '../pages/dungeon-info/dungeon-info';
 import { DungeonService } from './services/dungeon-service';
@@ -16,7 +17,8 @@ import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing'
     MyApp,
     TabsPage,
     DungeonInfoPage,
-    DungeonsListingPage
+    DungeonsListingPage,
+    SettingsPage,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing'
     MyApp,
     TabsPage,
     DungeonInfoPage,
-    DungeonsListingPage
+    DungeonsListingPage,
+    SettingsPage
   ],
   providers: [
     StatusBar,
