@@ -14,18 +14,18 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let dungeonCategory of dungeonsCollection">
-      <ion-item-divider class="testing" color="secondary">
-        {{ dungeonCategory.dungeonSeries | uppercase }}
-      </ion-item-divider>
+    <ion-card no-lines *ngFor="let dungeonCategory of dungeonsCollection">
+      <ion-card-title class="t1" padding-horizontal>
+        <b> {{ dungeonCategory.dungeonSeries | uppercase }} </b>
+      </ion-card-title>
       <button ion-item
               detail-push
               [navPush]="dungeonPage"
               [navParams]="dungeon"
               *ngFor="let dungeon of dungeonCategory.dungeons">
-        <h3>{{ dungeon.dungeonName | uppercase }}</h3>
+        <h3 class="h2">{{ dungeon.dungeonName | uppercase }}</h3>
       </button>
-    </ion-item>
+    </ion-card>
   </ion-list>
 </ion-content>
 <!--
