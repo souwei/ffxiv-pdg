@@ -4,12 +4,17 @@ import LevelDungeons from '../../data/levelingDungeons';
 import ExpertDungeons from '../../data/expertDungeons';
 
 const tipIconPaths = {
-  "heal"       : "../../assets/imgs/heal.png",
-  "tank"       : "../../assets/imgs/tank.png",
-  "dps"        : "../../assets/imgs/dps.png",
-  "general"    : "../../assets/imgs/general.png",
-  "avoid"      : "../../assets/imgs/avoid.png",
-  "mechanic"   : "../../assets/imgs/mech.png"
+  "heal"       : "assets/imgs/heal.png",
+  "tank"       : "assets/imgs/tank.png",
+  "dps"        : "assets/imgs/dps.png",
+  "general"    : "assets/imgs/general.png",
+  "avoid"      : "assets/imgs/avoid.png",
+  "mechanic"   : "assets/imgs/mech.png"
+}
+
+const dungeonIconPaths = {
+  "main"      : "assets/imgs/msq.png",
+  "opt"       : "assets/imgs/oq.png"
 }
 
 @Injectable()
@@ -23,6 +28,10 @@ export class DungeonService {
 
   getTipIconPaths(): object {
     return tipIconPaths;
+  }
+
+  getDungeonIcons() : object {
+    return dungeonIconPaths;
   }
 
 }

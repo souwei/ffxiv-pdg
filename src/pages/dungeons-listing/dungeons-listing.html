@@ -26,33 +26,10 @@
                 [navPush]="dungeonPage"
                 [navParams]="dungeon"
                 *ngFor="let dungeon of dungeonCategory.dungeons; let i = index">
-          <img margin-vertical class="dungeon-logo" item-left src="../../assets/imgs/msq.png" alt="">
+          <img margin-vertical class="dungeon-logo" item-left [src]="getDungeonIcon(dungeon.mainStoryQuest)" alt="">
           <h3>{{ dungeon.dungeonName | uppercase }}</h3>
         </button>
       </ion-item-group>
     </ion-item>
   </ion-list>
 </ion-content>
-<!--
-<button ion-item
-        detail-push
-        [navPush]="dungeonPage"
-        [navParams]="dungeon"
-        *ngFor="let dungeon of dungeonsCollection">
-  <h2>{{ dungeon.dungeonName | uppercase }}</h2>
-</button> -->
-
-<!-- <ion-content padding>
-  <h3 text-center>Select dungeon</h3>
-  <ion-list>
-    <button ion-item
-            detail-push
-            *ngFor="let quoteGroup of quoteCollection"
-            [navPush]="quotesPage"
-            [navParams]="quoteGroup">
-      <ion-icon [name]="quoteGroup.icon" item-left></ion-icon>
-      <h2>{{ quoteGroup.category | uppercase }}</h2>
-      <p>{{ quoteGroup.quotes.length }} quotes </p>
-    </button>
-  </ion-list>
-</ion-content> -->
