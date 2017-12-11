@@ -655,19 +655,23 @@ export default [
         bossName: "Raskovnik",
         bossTips: [
           {
-            desc: "'Acid Rain' - circle AoEs on all players.",
+            spellName: "ACID RAIN",
+            desc: " - Circle AoEs on all players.",
             icon: "avoid"
           },
           {
-            desc: "'Sweet Scent' - kill bee adds asap.",
+            spellName: "SWEET SCENT",
+            desc: " - Kill bee adds asap.",
             icon: "dps"
           },
           {
-            desc: "'Devour' -  boss will target random player and suck them in then stun and cast circle AoE.",
+            spellName: "DEVOUR",
+            desc: " - Boss will target random player and suck them in then stun and cast circle AoE.",
             icon: "avoid"
           },
           {
-            desc: "'SPIT' - unavoidable room-wide AoE.",
+            spellName: "SPIT",
+            desc: " - Unavoidable room-wide AoE.",
             icon: "heal"
           }
         ]
@@ -676,7 +680,8 @@ export default [
         bossName: "Myath",
         bossTips: [
           {
-            desc: "'Primordial Roar' - unavoidable room-wide AoE that also spawn adds.",
+            spellName: "PRIMORDIAL ROAR",
+            desc: " - Unavoidable room-wide AoE that also spawn adds.",
             icon: "heal"
           },
           {
@@ -684,7 +689,8 @@ export default [
             icon: "dps"
           },
           {
-            desc: "'Mad Dash' - targeted players should STACK together on RED marker ; SPREAD on Blue marker.",
+            spellName: "MAD DASH",
+            desc: " - Targeted players should STACK together on RED marker ; SPREAD on Blue marker.",
             icon: "heal"
           }
         ]
@@ -693,15 +699,18 @@ export default [
         bossName: "Tioman",
         bossTips: [
           {
-            desc: "'Abyssic Buster' - Tanks should keep the boss facing away from the party.",
+            spellName: "ABYSSIC BUSTER",
+            desc: " - Tanks should keep the boss facing away from the party.",
             icon: "avoid"
           },
           {
-            desc: "'Chaos Blast' - a column and circle AoE on every player.",
+            spellName: "CHAOS BLAST",
+            desc: " - A column and circle AoE on every player.",
             icon: "avoid"
           },
           {
-            desc: "'Comet' - two players will be marked with green markers, spread apart and run as far to the edge as possible; dodge meteor AoE and drop proximity AoE and run away.",
+            spellName: "COMET",
+            desc: " - Two players will be marked with green markers, spread apart and run as far to the edge as possible; dodge meteor AoE and drop proximity AoE and run away.",
             icon: "mechanic"
           },
           {
@@ -709,11 +718,13 @@ export default [
             icon: "dps"
           },
           {
-            desc: "'Heavensfall' - random player targeted with red/orange marker ; run away from party for AoE damage.",
+            spellName: "HEAVENSFALL",
+            desc: " - Random player targeted with red/orange marker ; run away from party for AoE damage.",
             icon: "mechanic"
           },
           {
-            desc: "'Dark Star' - unavoidable room-wide AoE.",
+            spellName: "DARK STAR",
+            desc: " - Unavoidable room-wide AoE.",
             icon: "heal"
           }
         ]
