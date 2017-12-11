@@ -8,7 +8,7 @@
   <h5>Dungeon Tips</h5>
   <ion-card>
       <ul>
-        <li *ngFor="let tips of dungeon.dungeonTips">
+        <li class="tip-description" *ngFor="let tips of dungeon.dungeonTips">
             {{ tips }}
         </li>
       </ul>
@@ -25,5 +25,6 @@
               {{ tip.desc }}
           </p>
         </ion-item>
+      
   </ion-card>
 </ion-content>

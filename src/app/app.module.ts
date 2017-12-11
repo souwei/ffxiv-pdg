@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { DungeonInfoPage } from '../pages/dungeon-info/dungeon-info';
 import { DungeonService } from './services/dungeon-service';
 import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing';
+import { SettingsProvider } from '../providers/settings/settings';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing'
     StatusBar,
     SplashScreen,
     DungeonService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    SettingsProvider
   ]
 })
 export class AppModule {}

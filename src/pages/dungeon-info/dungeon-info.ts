@@ -2,6 +2,7 @@ import { Component , OnInit } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Dungeon } from '../../data/dungeon.interface';
 import { DungeonService } from '../../app/services/dungeon-service';
+import { SettingsProvider } from './../../providers/settings/settings';
 
 @Component({
   selector: 'page-dungeon-info',
@@ -11,11 +12,15 @@ import { DungeonService } from '../../app/services/dungeon-service';
 export class DungeonInfoPage implements OnInit {
   dungeon: Dungeon;
   tipIconPaths: {};
+  selectedTheme: String;
+
 
   constructor(
     public navCtrl: NavController,
     public dungeonSvr: DungeonService,
-    public navParams: NavParams) {
+    public navParams: NavParams,
+  private settings: SettingsProvider) {
+    this.settings.getActiveTheme().subscribe(val => this.selectedTheme = val);
   }
 
   ngOnInit(){
@@ -26,5 +31,13 @@ export class DungeonInfoPage implements OnInit {
   getTipIconPath(tipIcon: string){
     return this.tipIconPaths[tipIcon];
   }
+
+  toggleAppTheme() {
+if (this.selectedTheme === 'dark-theme') {
+  this.settings.setActiveTheme('light-theme');
+} else {
+  this.settings.setActiveTheme('dark-theme');
+}
+}
 
 }

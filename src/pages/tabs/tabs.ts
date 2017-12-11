@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DungeonsListingPage } from '../dungeons-listing/dungeons-listing';
+import { SettingsProvider } from '../../providers/settings/settings';
 
 @Component({
   selector: 'page-tabs',
@@ -20,6 +21,11 @@ import { DungeonsListingPage } from '../dungeons-listing/dungeons-listing';
 
 export class TabsPage {
   dungeonsListingPage = DungeonsListingPage;
+  selectedTheme: String;
+
+  constructor(private settings: SettingsProvider){
+    this.settings.getActiveTheme().subscribe(val => this.selectedTheme = val);
+  }
 
   resetStack(ev:any){
     if(ev.length()>1){
