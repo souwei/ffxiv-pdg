@@ -20,8 +20,4 @@ export class DungeonsListingPage implements OnInit{
     this.dungeonsCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
   }
 
-  checkIfLastElement(ele: any){
-    console.log(ele);
-  }
-
 }
