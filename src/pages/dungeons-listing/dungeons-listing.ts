@@ -18,7 +18,10 @@ export class DungeonsListingPage implements OnInit{
   ngOnInit(){
     this.selectedCategory = this.navParams.data['type'];
     this.dungeonsCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
-    console.log(this.dungeonsCollection);
+  }
+
+  checkIfLastElement(ele: any){
+    console.log(ele);
   }
 
 }
