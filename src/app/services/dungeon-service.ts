@@ -17,7 +17,7 @@ export class DungeonService {
 
   constructor() { }
 
-  getDungeons(dungeonType: string): Dungeon[] {
+  getDungeons(dungeonType: string): any {
     return (dungeonType === 'leveling') ? LevelDungeons : ExpertDungeons;
   }
 

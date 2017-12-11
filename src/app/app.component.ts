@@ -4,13 +4,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SettingsPage } from '../pages/settings/settings';
-
+import { SettingsProvider } from './../providers/settings/settings';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage:any = TabsPage;
   settingsPage = SettingsPage;
+  selectedTheme: String;
 
   @ViewChild('rootNav') nav: NavController;
 
@@ -18,7 +19,9 @@ export class MyApp {
       platform: Platform,
       statusBar: StatusBar,
       splashScreen: SplashScreen,
+      private settings: SettingsProvider,
       private menuCtrl: MenuController) {
+         this.settings.getActiveTheme().subscribe(val => this.selectedTheme = val);
         platform.ready().then(() => {
           // Okay, so the platform is ready and our plugins are available.
           // Here you can do any higher level native things you might need.
