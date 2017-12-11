@@ -956,10 +956,10 @@ export default [
   },
   {
     dungeonSeries: "stormblood",
-    mainStoryQuest: true,
     dungeons: [
       {
         dungeonName: "The Sirensong Sea",
+        mainStoryQuest: "true",
         dungeonTips: ["Be careful of 'Fleshless captive' mini-boss who has an unavoidable room wide AoE stun, prepare to interrupt or heal through."],
         bossList: [
           {
