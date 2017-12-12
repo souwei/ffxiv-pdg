@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-  <h5>Dungeon Tips</h5>
+  <h5 class="h1">Dungeon Tips</h5>
   <ion-card>
       <ul>
         <li class="tip-description" *ngFor="let tips of dungeon.dungeonTips">
@@ -13,18 +13,17 @@
         </li>
       </ul>
   </ion-card>
-  <h5>Boss Tips</h5>
+  <h5 class="h1">Boss Tips</h5>
   <ion-card *ngFor="let boss of dungeon.bossList">
     <ion-card-title padding-horizontal>
       <b> {{ boss.bossName }} </b>
     </ion-card-title>
-        <ion-item text-wrap *ngFor="let tip of boss.bossTips">
+        <ion-item class="c1" text-wrap *ngFor="let tip of boss.bossTips">
           <img class="role" item-left [src]="getTipIconPath(tip.icon)" alt="">
           <p class="tip-description">
-              <span *ngIf="tip.spellName" class="spell-name"> '{{ tip.spellName }}'</span>
-              {{ tip.desc }}
+              <span *ngIf="tip.spellName" class="spell-name"> &nbsp;{{ tip.spellName }} </span>
+              &nbsp;{{ tip.desc }}
           </p>
         </ion-item>
-      
   </ion-card>
 </ion-content>

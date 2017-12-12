@@ -13,8 +13,8 @@ $app-direction: ltr;
 
 
 @import "ionic.globals";
-@import "default.theme";
 @import "dark.theme";
+@import "default.theme";
 
 // Shared Variables
 // --------------------------------------------------
@@ -39,7 +39,10 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  orange:     orange,
+  black:      #141414,
+  gray:       #323232
 );
 
 
