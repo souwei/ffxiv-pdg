@@ -14,6 +14,10 @@ $colors: (
     background-color: color($colors, black);
   }
 
+  .toolbar {
+    border: 3px color($colors, gray) solid;
+  }
+
   .toolbar-title {
     color: color($colors, primary);
   }
@@ -28,6 +32,7 @@ $colors: (
 
   .tab-button {
     background-color: color($colors, dark);
+    border: 3px color($colors, gray) solid;
   }
 
   .card-title {
