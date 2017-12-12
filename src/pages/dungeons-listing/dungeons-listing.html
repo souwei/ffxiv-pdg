@@ -15,36 +15,19 @@
 <ion-content padding>
   <ion-list>
 <<<<<<< HEAD
-    <ion-item *ngFor="let dungeonCategory of dungeonsCollection">
-      <ion-item-divider color="secondary">
-        {{ dungeonCategory.dungeonSeries | uppercase }}
-      </ion-item-divider>
-      <ion-item-group>
+    <ion-card no-lines *ngFor="let dungeonCategory of dungeonsCollection">
+      <ion-card-title class="t1" padding-horizontal>
+        <b>  {{ dungeonCategory.dungeonSeries | uppercase }} </b>
+      </ion-card-title>
         <button class="underline-fix"
                 ion-item
-                no-padding
                 detail-push
                 [navPush]="dungeonPage"
                 [navParams]="dungeon"
                 *ngFor="let dungeon of dungeonCategory.dungeons; let i = index">
           <img margin-vertical class="dungeon-logo" item-left [src]="getDungeonIcon(dungeon.mainStoryQuest)" alt="">
-          <h3>{{ dungeon.dungeonName | uppercase }}</h3>
+          <h3 class="h2">{{ dungeon.dungeonName | uppercase }}</h3>
         </button>
-      </ion-item-group>
-    </ion-item>
-=======
-    <ion-card no-lines *ngFor="let dungeonCategory of dungeonsCollection">
-      <ion-card-title class="t1" padding-horizontal>
-        <b> {{ dungeonCategory.dungeonSeries | uppercase }} </b>
-      </ion-card-title>
-      <button ion-item
-              detail-push
-              [navPush]="dungeonPage"
-              [navParams]="dungeon"
-              *ngFor="let dungeon of dungeonCategory.dungeons">
-        <h3 class="h2">{{ dungeon.dungeonName | uppercase }}</h3>
-      </button>
     </ion-card>
->>>>>>> Dark
   </ion-list>
 </ion-content>
