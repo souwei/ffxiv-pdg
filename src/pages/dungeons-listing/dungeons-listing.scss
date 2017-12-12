@@ -1,4 +1,5 @@
 page-dungeons-listing {
+<<<<<<< HEAD
   .dungeon-logo{
     height: auto;
     width: 30px;
@@ -10,5 +11,13 @@ page-dungeons-listing {
     border-bottom-style: solid !important;
     border-bottom-color: rgb(200, 199, 204) !important;
   }
+=======
+  //components override
+  .list-md > .item-block:last-child .item-inner,
+  .list-md > .item-wrapper:last-child ion-label,
+  .list-md > .item-wrapper:last-child .item-inner {
+    border-bottom: 0px solid #dedede !important;
+  }
+>>>>>>> Dark
 
 }

@@ -1,9 +1,64 @@
+$colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  orange:     orange,
+  black:      #141414,
+  gray:       #323232
+);
+
 .light-theme {
   ion-content {
-    background-color: #fff;
+    background-color: color($colors, light);
   }
 
-  .toolbar-background {
-    background-color: #fff;
+  .toolbar-title {
+    color: color($colors, dark);
   }
+
+  .header .toolbar-background {
+    background-color: color($colors, light);
+  }
+
+  .back-button-icon {
+    color: color($colors, dark);
+  }
+
+  .tab-button {
+    background-color: color($colors, light);
+  }
+
+  .card-title {
+    margin-top:-4px;
+    margin-bottom:6px;
+    color: color($colors, black);
+  }
+
+  .card {
+    background-color: color($colors, light);
+  }
+
+  .h1 {
+    color: color($colors, danger);
+  }
+
+  .item {
+    background-color: color($colors, light);
+    margin-top:-10px;
+    margin-bottom:-2px;
+  }
+
+  .tip-description {
+    color: color($colors, black);
+  }
+  
+  .spell-name{
+    background-color: color($colors, orange);
+    color: color($colors, dark);
+    font-weight:bolder;
+  }
+
 }
+

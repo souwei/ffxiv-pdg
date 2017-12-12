@@ -1,14 +1,93 @@
+$colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  orange:     orange,
+  black:      #141414,
+  gray:       #323232
+);
+
 .dark-theme {
   ion-content {
-    background-color: #090f2f;
-    color: #fff;
+    background-color: color($colors, black);
   }
 
   .toolbar-title {
-    color: #fff;
+    color: color($colors, primary);
   }
 
   .header .toolbar-background {
-    background-color: #090f2f;
+    background-color: color($colors, dark);
   }
+
+  .back-button-icon {
+    color: color($colors, light);
+  }
+
+  .tab-button {
+    background-color: color($colors, dark);
+  }
+
+  .card-title {
+    margin-top:-4px;
+    margin-bottom:6px;
+    color: color($colors, secondary);
+  }
+
+  .card {
+    background-color: color($colors, gray);
+  }
+
+  .h1 {
+    color: color($colors, danger);
+  }
+
+  .c1 {
+    background-color: color($colors, dark);
+    margin-top:-10px;
+    margin-bottom:-2px;
+  }
+
+  .tip-description {
+    color: color($colors, light);
+  }
+
+  .spell-name{
+    background-color: color($colors, orange);
+    color: color($colors, dark);
+    font-weight:bolder;
+  }
+
+  .item-divider{
+    background-color: color($colors, gray);
+    color: color($colors, secondary);
+    font-weight:bolder;
+    border-bottom: 0px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  .item-block{
+    background-color: color($colors, dark);
+    margin-bottom: -7px;
+  }
+
+  .h2{
+    color: color($colors, light);   
+    margin-top:-4px;
+    margin-bottom:6px;
+  }
+
+  .t1{
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+
+  .icon{
+    color: color($colors, light);
+  }
+
 }
+
+
