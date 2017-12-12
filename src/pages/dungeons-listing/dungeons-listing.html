@@ -25,7 +25,7 @@
                 [navParams]="dungeon"
                 *ngFor="let dungeon of dungeonCategory.dungeons; let i = index">
           <img margin-vertical class="dungeon-logo" item-left [src]="getDungeonIcon(dungeon.mainStoryQuest)" alt="">
-          <span class="h2">{{ dungeon.dungeonName | uppercase }}</span>
+          <span class="h2">{{ dungeon.dungeonName }}</span>
         </button>
     </ion-card>
   </ion-list>
