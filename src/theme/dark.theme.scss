@@ -15,7 +15,7 @@ $colors: (
   }
 
   .toolbar {
-    border: 3px color($colors, gray) solid;
+    border-bottom: 1px color($colors, gray) solid;
   }
 
   .toolbar-title {
@@ -32,7 +32,7 @@ $colors: (
 
   .tab-button {
     background-color: color($colors, dark);
-    border: 3px color($colors, gray) solid;
+    border-top: 1px color($colors, gray) solid;
   }
 
   .card-title {
