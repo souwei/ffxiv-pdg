@@ -1,8 +1,11 @@
+import { DungeonCollection } from "./dungeonColletion.interface";
+import { Dungeon } from "./dungeon.interface";
+
 export default [
-  {
-    dungeonSeries: "stormblood",
+  <DungeonCollection>{
+    dungeonSeries: "Stormblood",
     dungeons: [
-      {
+      <Dungeon>{
         dungeonName: "Ala Mhigo",
         mainStoryQuest: true,
         dungeonTips: [
@@ -103,7 +106,7 @@ export default [
           }
         ]
       },
-      {
+      <Dungeon>{
         dungeonName: "Kugane Castle",
         mainStoryQuest: false,
         dungeonTips: ["No special instructions."],
@@ -168,7 +171,7 @@ export default [
           }
         ]
       },
-      {
+      <Dungeon>{
         dungeonName: "The Temple of the Fist",
         mainStoryQuest: false,
         dungeonTips: ["Be careful of stepping into giant blobs of moss."],
@@ -263,7 +266,7 @@ export default [
           }
         ]
       },
-      {
+      <Dungeon>{
         dungeonName: "The Drowned City of Skalla",
         mainStoryQuest: false,
         dungeonTips: ["No special instructions."],

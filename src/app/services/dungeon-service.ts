@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Dungeon } from '../../data/dungeon.interface';
 import LevelDungeons from '../../data/levelingDungeons';
 import ExpertDungeons from '../../data/expertDungeons';
+import { DungeonCollection } from '../../data/dungeonColletion.interface';
 
 const tipIconPaths = {
   "heal"       : "assets/imgs/heal.png",
@@ -22,7 +22,7 @@ export class DungeonService {
 
   constructor() { }
 
-  getDungeons(dungeonType: string): any {
+  getDungeons(dungeonType: string): DungeonCollection[] {
     return (dungeonType === 'leveling') ? LevelDungeons : ExpertDungeons;
   }
 

@@ -1,15 +1,15 @@
 import { Component,OnInit } from '@angular/core';
 import { NavParams } from 'ionic-angular';
-import { Dungeon } from '../../data/dungeon.interface';
 import { DungeonInfoPage } from '../dungeon-info/dungeon-info';
 import { DungeonService } from '../../app/services/dungeon-service';
+import { DungeonCollection } from '../../data/dungeonColletion.interface';
 
 @Component({
   selector: 'page-dungeons-listing',
   templateUrl: 'dungeons-listing.html',
 })
 export class DungeonsListingPage implements OnInit{
-  dungeonsCollection: Dungeon[];
+  dungeonsCollection: DungeonCollection[];
   dungeonPage = DungeonInfoPage;
   selectedCategory: string;
   dungeonsIcon: {} ;
