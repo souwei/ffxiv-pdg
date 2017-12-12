@@ -4,6 +4,7 @@ export interface Dungeon {
     dungeonSeries: string;
     dungeons: {
       dungeonName: string;
+      mainStoryQuest: boolean;
       dungeonTips: string[];
       bossList: {
         bossName: string;

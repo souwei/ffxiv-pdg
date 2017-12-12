@@ -4,6 +4,7 @@ export default [
     dungeons: [
       {
         dungeonName: "Ala Mhigo",
+        mainStoryQuest: true,
         dungeonTips: [
           "Be alert of AoE circles throughout dungeon."
         ],
@@ -104,6 +105,7 @@ export default [
       },
       {
         dungeonName: "Kugane Castle",
+        mainStoryQuest: false,
         dungeonTips: ["No special instructions."],
         bossList: [
           {
@@ -168,6 +170,7 @@ export default [
       },
       {
         dungeonName: "The Temple of the Fist",
+        mainStoryQuest: false,
         dungeonTips: ["Be careful of stepping into giant blobs of moss."],
         bossList: [
           {
@@ -262,6 +265,7 @@ export default [
       },
       {
         dungeonName: "The Drowned City of Skalla",
+        mainStoryQuest: false,
         dungeonTips: ["No special instructions."],
         bossList: [
           {

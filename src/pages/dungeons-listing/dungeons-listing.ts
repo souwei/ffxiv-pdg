@@ -12,13 +12,18 @@ export class DungeonsListingPage implements OnInit{
   dungeonsCollection: Dungeon[];
   dungeonPage = DungeonInfoPage;
   selectedCategory: string;
+  dungeonsIcon: {} ;
 
   constructor(private dungeonSvr: DungeonService, private navParams:  NavParams){ }
 
   ngOnInit(){
     this.selectedCategory = this.navParams.data['type'];
     this.dungeonsCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
-    console.log(this.dungeonsCollection);
+    this.dungeonsIcon = this.dungeonSvr.getDungeonIcons();
+  }
+
+  getDungeonIcon(storyline:boolean){
+    return (storyline) ? this.dungeonsIcon['main'] : this.dungeonsIcon['opt'];
   }
 
 }

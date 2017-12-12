@@ -15,24 +15,21 @@
 <ion-content padding>
   <ion-list>
     <ion-item *ngFor="let dungeonCategory of dungeonsCollection">
-      <ion-item-divider class="testing" color="secondary">
+      <ion-item-divider color="secondary">
         {{ dungeonCategory.dungeonSeries | uppercase }}
       </ion-item-divider>
-      <button ion-item
-              detail-push
-              [navPush]="dungeonPage"
-              [navParams]="dungeon"
-              *ngFor="let dungeon of dungeonCategory.dungeons">
-        <h3>{{ dungeon.dungeonName | uppercase }}</h3>
-      </button>
+      <ion-item-group>
+        <button class="underline-fix"
+                ion-item
+                no-padding
+                detail-push
+                [navPush]="dungeonPage"
+                [navParams]="dungeon"
+                *ngFor="let dungeon of dungeonCategory.dungeons; let i = index">
+          <img margin-vertical class="dungeon-logo" item-left [src]="getDungeonIcon(dungeon.mainStoryQuest)" alt="">
+          <h3>{{ dungeon.dungeonName | uppercase }}</h3>
+        </button>
+      </ion-item-group>
     </ion-item>
   </ion-list>
 </ion-content>
-<!--
-<button ion-item
-        detail-push
-        [navPush]="dungeonPage"
-        [navParams]="dungeon"
-        *ngFor="let dungeon of dungeonsCollection">
-  <h2>{{ dungeon.dungeonName | uppercase }}</h2>
-</button> -->

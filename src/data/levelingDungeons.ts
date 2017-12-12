@@ -4,6 +4,7 @@ export default [
     dungeons: [
       {
         dungeonName: "Satasha Seagrot",
+        mainStoryQuest: true,
         dungeonTips: [
           "The ‘Bloody memo’ will indicate which colour of coral you will need to interact with.",
           "Kill Clams first that spawn shade seekers."
@@ -44,6 +45,7 @@ export default [
       },
       {
         dungeonName: "The Tam-Tara Deepcroft",
+        mainStoryQuest: true,
         dungeonTips: ["Break the barriers.","Destroy the Orbs.","Find the Rosary."],
         bossList: [
           {
@@ -72,6 +74,7 @@ export default [
       },
       {
         dungeonName: "Copperbell Mines",
+        mainStoryQuest: true,
         dungeonTips: ["Let tank lead the way."],
         bossList: [
           {
@@ -119,6 +122,7 @@ export default [
       },
       {
         dungeonName: "Halatali",
+        mainStoryQuest: true,
         dungeonTips: ["Always kill 'Bombs' first and avoid AoE self-destruct."],
         bossList: [
           {
@@ -176,6 +180,7 @@ export default [
       },
       {
         dungeonName: "The Thousand Maws of Toto-Rak",
+        mainStoryQuest: true,
         dungeonTips: [
           "Collect all Magitek Photocells including the ones that spawn from killing trash mobs.",
           "Use ranged attacks to kill Fleshy pods that poison melee range targets.",
@@ -220,6 +225,7 @@ export default [
       },
       {
         dungeonName: "Haukke Manor",
+        mainStoryQuest: true,
         dungeonTips: ["Be wary of the Manor Maidservants, avoid their stun circle AoE."],
         bossList: [
           {
@@ -273,6 +279,7 @@ export default [
       },
       {
         dungeonName: "Brayflox's longstop",
+        mainStoryQuest: true,
         dungeonTips: ["Save goblins from trash mobs for extra loot chests."],
         bossList: [
           {
@@ -360,6 +367,7 @@ export default [
       },
       {
         dungeonName: "The Sunken Temple of Qarn",
+        mainStoryQuest: false,
         dungeonTips: ["Scales of Judgement: LEFT - Flame of Magic, RIGHT - Fruit of Knowledge"],
         bossList: [
           {
@@ -414,6 +422,7 @@ export default [
       },
       {
         dungeonName: "Cutter's Cry",
+        mainStoryQuest: false,
         dungeonTips: ["Avoid standing in erupting sand and blue puddles."],
         bossList: [
           {
@@ -480,6 +489,7 @@ export default [
       },
       {
         dungeonName: "The Stone Vigil",
+        mainStoryQuest: true,
         dungeonTips: [
           "Be careful of Dragon Aevis, if possible single pull them.",
           "Ice Sprites will spawn in long icy hallways."
@@ -538,6 +548,7 @@ export default [
       },
       {
         dungeonName: "Dzemael Darkhold",
+        mainStoryQuest: false,
         dungeonTips: ["Avoid large exploding orange crystals."],
         bossList: [
           {
@@ -597,6 +608,7 @@ export default [
     dungeons: [
       {
         dungeonName: "The Dusk Vigil",
+        mainStoryQuest: true,
         dungeonTips: ["Tanks shoud quickly pick up Mylodons."],
         bossList: [
           {
@@ -657,6 +669,7 @@ export default [
       },
       {
         dungeonName: 'Sohm Al',
+        mainStoryQuest: true,
         dungeonTips: ['Range attack and destroy Pollen Clusters asap.'],
         bossList: [
           {
@@ -741,6 +754,7 @@ export default [
       },
       {
         dungeonName: "The Aery",
+        mainStoryQuest: true,
         dungeonTips: ["The slumbering dragon trash mobs can be avoided by running past them."],
         bossList: [
           {
@@ -812,6 +826,7 @@ export default [
       },
       {
         dungeonName: "The Vault",
+        mainStoryQuest: true,
         dungeonTips: ['Always let tank lead the way.'],
         bossList: [
           {
@@ -874,6 +889,7 @@ export default [
       },
       {
         dungeonName: "The Great Grubal Library",
+        mainStoryQuest: true,
         dungeonTips: ["Page64 adds will target and tether to random party member, stay away from party members."],
         bossList: [
           {
@@ -916,6 +932,7 @@ export default [
           },
           {
             bossName: "The Everliving Bibliotaph",
+            mainStoryQuest: true,
             bossTips: [
               {
                 desc: "Targeted (green marker) party members should drop an orb in between the platforms as close to the wall as possible.",
@@ -942,6 +959,7 @@ export default [
     dungeons: [
       {
         dungeonName: "The Sirensong Sea",
+        mainStoryQuest: "true",
         dungeonTips: ["Be careful of 'Fleshless captive' mini-boss who has an unavoidable room wide AoE stun, prepare to interrupt or heal through."],
         bossList: [
           {
@@ -1013,6 +1031,7 @@ export default [
       },
       {
         dungeonName: "Shisui of the Violet Tides",
+        mainStoryQuest: false,
         dungeonTips: ["Avoid running or stepping into sand with eye tentacles potruding out of sand."],
         bossList: [
           {
@@ -1081,6 +1100,7 @@ export default [
       },
       {
         dungeonName: "Bardam's Mettle",
+        mainStoryQuest: true,
         dungeonTips: ["Be careful of bigger pulls, trash mobs hit harder in this dungeon."],
         bossList: [
           {
@@ -1167,6 +1187,7 @@ export default [
       },
       {
         dungeonName: "Castrum Abania",
+        mainStoryQuest: true,
         dungeonTips: ['Tanks should be quick to pick up trash mobs that spawn in different spots.'],
         bossList: [
           {
