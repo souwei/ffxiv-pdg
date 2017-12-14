@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input , OnInit} from '@angular/core';
 
 export interface CountdownTimer {
   seconds: number;
@@ -20,6 +20,7 @@ export class Timer {
 
   ngOnInit() {
     this.initTimer();
+    this.startTimer();
   }
 
   hasFinished() {
