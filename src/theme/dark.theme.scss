@@ -40,6 +40,8 @@ $button-wp-ripple-background-color: color($colors, primary);
 
   .tab-button {
     border-top: 1px color($colors, gray) solid;
+    border-left: 0px;
+    border-right: 0px;
     background: color($colors, black); 
   }
 
