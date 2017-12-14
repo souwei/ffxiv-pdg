@@ -7,7 +7,7 @@ import { SettingsPage } from '../pages/settings/settings';
 import { SettingsProvider } from './../providers/settings/settings';
 import 'moment-duration-format';
 import * as moment from 'moment';
-import * as separator from 'string-remove-thousand-separators';
+import * as separatorRemover from 'string-remove-thousand-separators';
 
 @Component({
   templateUrl: 'app.html'
@@ -49,7 +49,7 @@ export class MyApp {
   }
 
   getRemainingSeconds() : number{
-    return separator(this.remainingTime);
+    return separatorRemover(this.remainingTime);
   }
 
   todayResetNotReached(){

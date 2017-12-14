@@ -18,9 +18,9 @@ const dungeonIconPaths = {
 }
 
 const expLogoPaths = {
-  "a realm reborn"       : "assets/imgs/arr.png",
-  "heavensward"        : "assets/imgs/hw.png",
-  "stormblood"        : "assets/imgs/sb.png"
+  "A Realm Reborn"       : "assets/imgs/arr.png",
+  "Heavensward"        : "assets/imgs/hw.png",
+  "Stormblood"        : "assets/imgs/sb.png"
 }
 
 @Injectable()
