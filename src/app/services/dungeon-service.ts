@@ -17,6 +17,12 @@ const dungeonIconPaths = {
   "opt"       : "assets/imgs/oq.png"
 }
 
+const expLogoPaths = {
+  "a realm reborn"       : "assets/imgs/arr.png",
+  "heavensward"        : "assets/imgs/hw.png",
+  "stormblood"        : "assets/imgs/sb.png"
+}
+
 @Injectable()
 export class DungeonService {
 
@@ -32,6 +38,10 @@ export class DungeonService {
 
   getDungeonIcons() : object {
     return dungeonIconPaths;
+  }
+
+  getExpLogos() : object {
+    return expLogoPaths;
   }
 
 }

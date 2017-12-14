@@ -9,13 +9,21 @@ $colors: (
   gray:       #323232
 );
 
+$list-ios-activated-background-color: color($colors, black);
+$list-md-activated-background-color: color($colors, black);
+$list-wp-activated-background-color: color($colors, black);
+$button-ios-ripple-background-color: color($colors, primary);
+$button-md-ripple-background-color: color($colors, primary);
+$button-wp-ripple-background-color: color($colors, primary);
+
+
 .dark-theme {
   ion-content {
     background-color: color($colors, black);
   }
 
   .toolbar {
-    border: 3px color($colors, gray) solid;
+    border-bottom: 1px color($colors, gray) solid;
   }
 
   .toolbar-title {
@@ -31,8 +39,22 @@ $colors: (
   }
 
   .tab-button {
-    background-color: color($colors, dark);
-    border: 3px color($colors, gray) solid;
+    border-top: 1px color($colors, gray) solid;
+    border-left: 0px;
+    border-right: 0px;
+    background: color($colors, black); 
+  }
+
+  .tabs-md .tab-button[aria-selected=true] {
+    background: color($colors, dark); 
+  }
+
+  .tabs-ios .tab-button[aria-selected=true] {
+    background: color($colors, dark); 
+  }
+
+  .tabs-wp .tab-button[aria-selected=true] {
+    background: color($colors, dark); 
   }
 
   .card-title {
@@ -95,6 +117,14 @@ $colors: (
 
   .list{
     margin-top: -30px;
+  }
+
+  .activated {
+    background-color: color($colors, black);
+  }
+
+  .tab-item-active {
+    background: color($colors, black);
   }
 
 }

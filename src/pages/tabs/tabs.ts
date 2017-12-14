@@ -8,13 +8,19 @@ import { SettingsProvider } from '../../providers/settings/settings';
     <ion-tabs (ionChange)="resetStack($event)">
       <ion-tab [root]="dungeonsListingPage"
                [rootParams]="{type:'leveling'}"
-               tabTitle="Leveling Dungeons"
-               tabIcon="leaf"></ion-tab>
+               tabIcon="dungeon"></ion-tab>
 
       <ion-tab [root]="dungeonsListingPage"
                [rootParams]="{type:'expert'}"
-               tabTitle="Expert Dungeons"
-               tabIcon="star"></ion-tab>
+               tabIcon="trial"></ion-tab>
+
+      <ion-tab [root]="dungeonsListingPage"
+               [rootParams]="{type:'leveling'}"
+               tabIcon="raid"></ion-tab>
+
+      <ion-tab [root]="dungeonsListingPage"
+               [rootParams]="{type:'expert'}"
+               tabIcon="star"></ion-tab>          
     </ion-tabs>
   `
 })
