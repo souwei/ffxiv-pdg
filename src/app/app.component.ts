@@ -34,10 +34,12 @@ export class MyApp {
         splashScreen.hide();
     });
 
-    if (moment().isBefore(moment({ hour:23 }))) {
-      this.remainingTime = moment.duration(moment({ hour:23 }).diff(moment())).format("s");
+    let resetTime = moment({ hour:23 });
+
+    if (this.todayResetNotReached) {
+      this.remainingTime = this.calculateRemainingTime(resetTime);
     }else {
-      this.remainingTime = moment.duration(moment({ hour:23 }).add(1,'day').diff(moment())).format("s");
+      this.remainingTime = this.calculateRemainingTime(resetTime.add(1,'day'));
     }
   }
 
@@ -46,12 +48,16 @@ export class MyApp {
     this.menuCtrl.close();
   }
 
-  menuOpened(){
-  }
-
   getRemainingSeconds() : number{
     return separator(this.remainingTime);
   }
 
+  todayResetNotReached(){
+    return moment().isBefore(moment({ hour:23 }))
+  }
+
+  calculateRemainingTime(endTime){
+    return moment.duration(endTime.diff(moment())).format("s");
+  }
 
 }
