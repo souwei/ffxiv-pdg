@@ -36,7 +36,7 @@ export class MyApp {
 
     let resetTime = moment({ hour:23 });
 
-    if (this.todayResetNotReached) {
+    if (this.todayResetNotReached()) {
       this.remainingTime = this.calculateRemainingTime(resetTime);
     }else {
       this.remainingTime = this.calculateRemainingTime(resetTime.add(1,'day'));
