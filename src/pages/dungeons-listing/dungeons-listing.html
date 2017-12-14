@@ -17,13 +17,13 @@
       <ion-card-title class="t1" padding-horizontal>
         <img class="exp-logo" [src]="getExpLogo(dungeonCategory.dungeonSeries)" alt="">
       </ion-card-title>
-        <button 
+        <button
                 ion-item
                 no-lines
                 detail-push
                 [navPush]="dungeonPage"
                 [navParams]="dungeon"
-                *ngFor="let dungeon of dungeonCategory.dungeons; let i = index">
+                *ngFor="let dungeon of dungeonCategory.dungeons">
           <img margin-vertical class="dungeon-logo" item-left [src]="getDungeonIcon(dungeon.mainStoryQuest)" alt="">
           <span class="h2">{{ dungeon.dungeonName }}</span>
         </button>

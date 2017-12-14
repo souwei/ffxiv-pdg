@@ -1,22 +1,26 @@
 import { Component,OnInit } from '@angular/core';
 import { NavParams } from 'ionic-angular';
-import { Dungeon } from '../../data/dungeon.interface';
 import { DungeonInfoPage } from '../dungeon-info/dungeon-info';
 import { DungeonService } from '../../app/services/dungeon-service';
+import { DungeonCollection } from '../../data/dungeonColletion.interface';
 
 @Component({
   selector: 'page-dungeons-listing',
   templateUrl: 'dungeons-listing.html',
 })
 export class DungeonsListingPage implements OnInit{
+
   expLogoPaths: {};
-  dungeonsCollection: Dungeon[];
+
+  dungeonsCollection: DungeonCollection[];
+
   dungeonPage = DungeonInfoPage;
   selectedCategory: string;
   dungeonsIcon: {};
 
 
-  constructor(private dungeonSvr: DungeonService, private navParams:  NavParams){ }
+  constructor(private dungeonSvr: DungeonService, private navParams:  NavParams){
+  }
 
   ngOnInit(){
     this.selectedCategory = this.navParams.data['type'];

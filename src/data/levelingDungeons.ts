@@ -1,49 +1,52 @@
+import { DungeonCollection } from './dungeonColletion.interface';
+import { Dungeon } from './dungeon.interface';
+
 export default [
-  {
-    dungeonSeries: "a realm reborn",
+  <DungeonCollection>{
+    dungeonSeries: "A Realm Reborn",
     dungeons: [
-      {
-        dungeonName: "Satasha Seagrot",
-        mainStoryQuest: true,
-        dungeonTips: [
-          "The ‘Bloody memo’ will indicate which colour of coral you will need to interact with.",
-          "Kill Clams first that spawn shade seekers."
-        ],
-        bossList: [
-          {
-            bossName: "Chopper",
-            bossTips: [
-              {
-                desc: "Avoid red circle AoE atttack." ,
-                icon: "avoid"
-              }
-            ]
-          },
-          {
-            bossName: "Captain Madison" ,
-            bossTips: [
-              {
-                desc: "Kill adds first in first encounter.",
-                icon: "dps"
-              },
-              {
-                desc: "Kill adds first as well in second encounter including the dogs that spawn at 50% hp.",
-                icon: "dps"
-              }
-            ]
-          },
-          {
-            bossName: "Denn the Orcatoothed",
-            bossTips: [
-              {
-                desc: "When unnatural ripples appear, interact with it to prevent adds from spawning.",
-                icon: "general"
-              }
-            ]
-          }
-        ]
-      },
-      {
+      <Dungeon>{
+          dungeonName: "Satasha Seagrot",
+          mainStoryQuest: true,
+          dungeonTips: [
+            "The ‘Bloody memo’ will indicate which colour of coral you will need to interact with.",
+            "Kill Clams first that spawn shade seekers."
+          ],
+          bossList: [
+            {
+              bossName: "Chopper",
+              bossTips: [
+                {
+                  desc: "Avoid red circle AoE atttack." ,
+                  icon: "avoid"
+                }
+              ]
+            },
+            {
+              bossName: "Captain Madison" ,
+              bossTips: [
+                {
+                  desc: "Kill adds first in first encounter.",
+                  icon: "dps"
+                },
+                {
+                  desc: "Kill adds first as well in second encounter including the dogs that spawn at 50% hp.",
+                  icon: "dps"
+                }
+              ]
+            },
+            {
+              bossName: "Denn the Orcatoothed",
+              bossTips: [
+                {
+                  desc: "When unnatural ripples appear, interact with it to prevent adds from spawning.",
+                  icon: "general"
+                }
+              ]
+            }
+          ]
+        },
+    <Dungeon>{
         dungeonName: "The Tam-Tara Deepcroft",
         mainStoryQuest: true,
         dungeonTips: ["Break the barriers.","Destroy the Orbs.","Find the Rosary."],
@@ -72,7 +75,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "Copperbell Mines",
         mainStoryQuest: true,
         dungeonTips: ["Let tank lead the way."],
@@ -120,7 +123,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "Halatali",
         mainStoryQuest: true,
         dungeonTips: ["Always kill 'Bombs' first and avoid AoE self-destruct."],
@@ -178,7 +181,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "The Thousand Maws of Toto-Rak",
         mainStoryQuest: true,
         dungeonTips: [
@@ -223,7 +226,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "Haukke Manor",
         mainStoryQuest: true,
         dungeonTips: ["Be wary of the Manor Maidservants, avoid their stun circle AoE."],
@@ -277,7 +280,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "Brayflox's longstop",
         mainStoryQuest: true,
         dungeonTips: ["Save goblins from trash mobs for extra loot chests."],
@@ -365,7 +368,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "The Sunken Temple of Qarn",
         mainStoryQuest: false,
         dungeonTips: ["Scales of Judgement: LEFT - Flame of Magic, RIGHT - Fruit of Knowledge"],
@@ -482,12 +485,11 @@ export default [
                 desc: "Avoid cone AoE attacks.",
                 icon: "avoid"
               }
-
             ]
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "The Stone Vigil",
         mainStoryQuest: true,
         dungeonTips: [
@@ -546,7 +548,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "Dzemael Darkhold",
         mainStoryQuest: false,
         dungeonTips: ["Avoid large exploding orange crystals."],
@@ -600,13 +602,13 @@ export default [
             ]
           }
         ]
-      },
+      }
     ]
   },
-  {
-    dungeonSeries: "heavensward",
+  <DungeonCollection> {
+    dungeonSeries: "Heavensward",
     dungeons: [
-      {
+      <Dungeon>{
         dungeonName: "The Dusk Vigil",
         mainStoryQuest: true,
         dungeonTips: ["Tanks shoud quickly pick up Mylodons."],
@@ -667,7 +669,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: 'Sohm Al',
         mainStoryQuest: true,
         dungeonTips: ['Range attack and destroy Pollen Clusters asap.'],
@@ -752,7 +754,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "The Aery",
         mainStoryQuest: true,
         dungeonTips: ["The slumbering dragon trash mobs can be avoided by running past them."],
@@ -824,7 +826,7 @@ export default [
           }
         ]
       },
-      {
+  <Dungeon>{
         dungeonName: "The Vault",
         mainStoryQuest: true,
         dungeonTips: ['Always let tank lead the way.'],
@@ -887,7 +889,7 @@ export default [
           }
         ]
       },
-      {
+    <Dungeon>{
         dungeonName: "The Great Grubal Library",
         mainStoryQuest: true,
         dungeonTips: ["Page64 adds will target and tether to random party member, stay away from party members."],
@@ -954,12 +956,12 @@ export default [
       }
     ]
   },
-  {
-    dungeonSeries: "stormblood",
+  <DungeonCollection> {
+    dungeonSeries: "Stormblood",
     dungeons: [
-      {
+      <Dungeon>{
         dungeonName: "The Sirensong Sea",
-        mainStoryQuest: "true",
+        mainStoryQuest: true,
         dungeonTips: ["Be careful of 'Fleshless captive' mini-boss who has an unavoidable room wide AoE stun, prepare to interrupt or heal through."],
         bossList: [
           {
@@ -1029,7 +1031,7 @@ export default [
           }
         ]
       },
-      {
+      <Dungeon>{
         dungeonName: "Shisui of the Violet Tides",
         mainStoryQuest: false,
         dungeonTips: ["Avoid running or stepping into sand with eye tentacles potruding out of sand."],
@@ -1098,7 +1100,7 @@ export default [
           }
         ]
       },
-      {
+      <Dungeon>{
         dungeonName: "Bardam's Mettle",
         mainStoryQuest: true,
         dungeonTips: ["Be careful of bigger pulls, trash mobs hit harder in this dungeon."],
@@ -1185,7 +1187,7 @@ export default [
           }
         ]
       },
-      {
+      <Dungeon>{
         dungeonName: "Castrum Abania",
         mainStoryQuest: true,
         dungeonTips: ['Tanks should be quick to pick up trash mobs that spawn in different spots.'],

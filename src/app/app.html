@@ -14,6 +14,7 @@
         <ion-icon name="settings" item-left></ion-icon>
         Theme Settings
       </button>
+      	<timer #countdownTimer [timeInSeconds]="getRemainingSeconds()"></timer>
     </ion-list>
   </ion-content>
 </ion-menu>
