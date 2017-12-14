@@ -34,8 +34,10 @@ export class MyApp {
         splashScreen.hide();
     });
 
-    if (moment().isBefore(moment({ hour:23, minute: 0 }))) {
-      this.remainingTime = moment.duration(moment({ hour:23, minute: 0 }).diff(moment())).format("s");
+    if (moment().isBefore(moment({ hour:23 }))) {
+      this.remainingTime = moment.duration(moment({ hour:23 }).diff(moment())).format("s");
+    }else {
+      this.remainingTime = moment.duration(moment({ hour:23 }).add(1,'day').diff(moment())).format("s");
     }
   }
 
