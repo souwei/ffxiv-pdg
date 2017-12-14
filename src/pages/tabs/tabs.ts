@@ -5,7 +5,7 @@ import { SettingsProvider } from '../../providers/settings/settings';
 @Component({
   selector: 'page-tabs',
   template: `
-    <ion-tabs>
+    <ion-tabs (ionChange)="resetStack($event)">
       <ion-tab [root]="dungeonsListingPage"
                [rootParams]="{type:'leveling'}"
                tabIcon="dungeon"></ion-tab>
