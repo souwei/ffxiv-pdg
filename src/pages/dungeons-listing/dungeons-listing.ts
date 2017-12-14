@@ -9,10 +9,12 @@ import { DungeonService } from '../../app/services/dungeon-service';
   templateUrl: 'dungeons-listing.html',
 })
 export class DungeonsListingPage implements OnInit{
+  expLogoPaths: {};
   dungeonsCollection: Dungeon[];
   dungeonPage = DungeonInfoPage;
   selectedCategory: string;
-  dungeonsIcon: {} ;
+  dungeonsIcon: {};
+
 
   constructor(private dungeonSvr: DungeonService, private navParams:  NavParams){ }
 
@@ -20,10 +22,15 @@ export class DungeonsListingPage implements OnInit{
     this.selectedCategory = this.navParams.data['type'];
     this.dungeonsCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
     this.dungeonsIcon = this.dungeonSvr.getDungeonIcons();
+    this.expLogoPaths = this.dungeonSvr.getExpLogos();
   }
 
   getDungeonIcon(storyline:boolean){
     return (storyline) ? this.dungeonsIcon['main'] : this.dungeonsIcon['opt'];
+  }
+
+  getExpLogo(expansion:string){
+    return this.expLogoPaths[expansion];
   }
 
 }

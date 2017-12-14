@@ -9,6 +9,11 @@ $colors: (
   gray:       #323232
 );
 
+$list-ios-activated-background-color: color($colors, black);
+$list-md-activated-background-color: color($colors, black);
+$list-wp-activated-background-color: color($colors, black);
+$button-md-ripple-background-color: color($colors, primary);
+
 .dark-theme {
   ion-content {
     background-color: color($colors, black);

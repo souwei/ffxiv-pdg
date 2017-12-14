@@ -1,22 +1,21 @@
 <ion-header>
-
   <ion-navbar>
-    <ion-buttons end>
+    <ion-buttons left>
       <button ion-button menuToggle >
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
     <ion-title text-center> {{ selectedCategory | uppercase }} DUNGEONS </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
   <ion-list>
+    <b> space </b> //Space between navbar and content
     <ion-card no-lines *ngFor="let dungeonCategory of dungeonsCollection">
       <ion-card-title class="t1" padding-horizontal>
-        <b>  {{ dungeonCategory.dungeonSeries | uppercase }} </b>
+        <img class="exp-logo" [src]="getExpLogo(dungeonCategory.dungeonSeries)" alt="">
       </ion-card-title>
         <button 
                 ion-item
