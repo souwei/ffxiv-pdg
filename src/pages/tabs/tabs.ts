@@ -5,25 +5,21 @@ import { SettingsProvider } from '../../providers/settings/settings';
 @Component({
   selector: 'page-tabs',
   template: `
-    <ion-tabs (ionChange)="resetStack($event)">
+    <ion-tabs>
       <ion-tab [root]="dungeonsListingPage"
                [rootParams]="{type:'leveling'}"
-               tabTitle="Leveling Dungeons"
-               tabIcon="leaf"></ion-tab>
+               tabIcon="dungeon"></ion-tab>
 
       <ion-tab [root]="dungeonsListingPage"
                [rootParams]="{type:'expert'}"
-               tabTitle="Expert Dungeons"
-               tabIcon="star"></ion-tab>
+               tabIcon="trial"></ion-tab>
 
       <ion-tab [root]="dungeonsListingPage"
                [rootParams]="{type:'leveling'}"
-               tabTitle="Leveling Dungeons"
-               tabIcon="leaf"></ion-tab>
+               tabIcon="raid"></ion-tab>
 
       <ion-tab [root]="dungeonsListingPage"
                [rootParams]="{type:'expert'}"
-               tabTitle="Expert Dungeons"
                tabIcon="star"></ion-tab>          
     </ion-tabs>
   `
