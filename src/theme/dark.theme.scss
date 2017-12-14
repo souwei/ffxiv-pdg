@@ -15,6 +15,11 @@ $list-wp-activated-background-color: color($colors, black);
 $button-ios-ripple-background-color: color($colors, primary);
 $button-md-ripple-background-color: color($colors, primary);
 $button-wp-ripple-background-color: color($colors, primary);
+$tabs-ios-tab-icon-size: 1;
+$tabs-ios-tab-padding-bottom: 3px;
+$tabs-ios-tab-margin-top: 5px;
+$tabs-ios-border: 0px;
+
 
 
 .dark-theme {
@@ -30,6 +35,16 @@ $button-wp-ripple-background-color: color($colors, primary);
     color: color($colors, primary);
   }
 
+  .title.title-md {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 70%;
+    text-align: center;
+  }
+
   .header .toolbar-background {
     background-color: color($colors, dark);
   }
@@ -43,6 +58,7 @@ $button-wp-ripple-background-color: color($colors, primary);
     border-left: 0px;
     border-right: 0px;
     background: color($colors, black); 
+    margin-bottom: 0px;
   }
 
   .tabs-md .tab-button[aria-selected=true] {
