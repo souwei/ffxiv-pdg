@@ -1,17 +1,26 @@
 page-tabs {
 
+  .ion-ios-dungeon,
+  .ion-ios-dungeon-outline,
+  .ion-wp-dungeon,
   .ion-md-dungeon {
     background-image: url('../assets/imgs/dungeon.png');
     width: 32px;
     height: 32px;
   }
 
+  .ion-ios-trial,
+  .ion-ios-trial-outline,
+  .ion-wp-trial,
   .ion-md-trial {
     background-image: url('../assets/imgs/trial.png');
     width: 32px;
     height: 32px;
   }
 
+  .ion-ios-raid,
+  .ion-ios-raid-outline,
+  .ion-wp-raid,
   .ion-md-raid {
     background-image: url('../assets/imgs/raid.png');
     width: 32px;
