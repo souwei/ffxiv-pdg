@@ -14,7 +14,8 @@ export class DungeonsListingPage implements OnInit{
   selectedCategory: string;
   dungeonsIcon: {} ;
 
-  constructor(private dungeonSvr: DungeonService, private navParams:  NavParams){ }
+  constructor(private dungeonSvr: DungeonService, private navParams:  NavParams){
+  }
 
   ngOnInit(){
     this.selectedCategory = this.navParams.data['type'];
