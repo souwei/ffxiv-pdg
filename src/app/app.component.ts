@@ -82,4 +82,8 @@ export class MyApp {
     this.startTicking();
   }
 
+  formatClock(seconds: number): string{
+    return this.viewService.formatClock(seconds);
+  }
+
 }
