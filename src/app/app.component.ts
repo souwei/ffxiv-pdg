@@ -16,7 +16,8 @@ export class MyApp {
   rootPage:any = TabsPage;
   settingsPage = SettingsPage;
   selectedTheme: String;
-  remainingTime;
+  dailyRemainingTime;
+  weeklyRemainingTime;
   countDownTimer: number;
 
   @ViewChild('rootNav') nav: NavController;
@@ -37,16 +38,21 @@ export class MyApp {
         splashScreen.hide();
     });
 
-    this.initializeCountDown();
+    this.startCountDowns();
   }
 
-  initializeCountDown(){
+  startCountDowns(){
+    this.initializeDailyCountDown();
+    this.initializeWeeklyCountDown();
+  }
+
+  initializeDailyCountDown(){
     let resetTime = moment({ hour:23 });
 
     if (this.todayResetNotReached()) {
-      this.remainingTime = this.calculateRemainingTime(resetTime);
+      this.dailyRemainingTime = this.calculateRemainingTime(resetTime);
     }else {
-      this.remainingTime = this.calculateRemainingTime(resetTime.add(1,'day'));
+      this.dailyRemainingTime = this.calculateRemainingTime(resetTime.add(1,'day'));
     }
 
     this.countDownTimer ?  this.resetTicking() : this.startTicking();
@@ -66,13 +72,14 @@ export class MyApp {
   }
 
   menuOpened(){
-    this.initializeCountDown();
+    this.startCountDowns();
   }
 
   startTicking(){
     this.countDownTimer = setInterval(()=> {
       this.ngZone.run(() => {
-        this.remainingTime--;
+        this.dailyRemainingTime--;
+        this.weeklyRemainingTime--;
       });
     },1000);
   }
@@ -84,6 +91,16 @@ export class MyApp {
 
   formatClock(seconds: number): string{
     return this.viewService.formatClock(seconds);
+  }
+
+  initializeWeeklyCountDown(){
+    let weekly = moment({ hour: 16}).day(2);
+
+    if (moment().isBefore(weekly)){
+      this.weeklyRemainingTime = this.calculateRemainingTime(weekly);
+    }else{
+      this.weeklyRemainingTime = this.calculateRemainingTime(weekly.add(1,'week'));
+    }
   }
 
 }

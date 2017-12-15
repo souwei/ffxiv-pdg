@@ -14,9 +14,13 @@
         <ion-icon name="settings" item-left></ion-icon>
          Settings
       </button>
-      <ion-item *ngIf="remainingTime">
+      <ion-item *ngIf="dailyRemainingTime">
         <ion-icon name="refresh" item-left></ion-icon>
-        <ion-label>Daily Reset in {{ formatClock(remainingTime) }}</ion-label>
+        <ion-label>Daily Reset in {{ formatClock(dailyRemainingTime) }}</ion-label>
+      </ion-item>
+      <ion-item *ngIf="weeklyRemainingTime">
+        <ion-icon name="refresh-circle" item-left></ion-icon>
+        <ion-label>Weekly Reset in {{ formatClock(weeklyRemainingTime) }}</ion-label>
       </ion-item>
     </ion-list>
   </ion-content>
