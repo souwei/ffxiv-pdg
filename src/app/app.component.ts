@@ -7,6 +7,7 @@ import { SettingsPage } from '../pages/settings/settings';
 import { SettingsProvider } from './../providers/settings/settings';
 import 'moment-duration-format';
 import * as moment from 'moment';
+import { ViewService } from './services/view-service';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,6 +27,7 @@ export class MyApp {
     splashScreen: SplashScreen,
     private settings: SettingsProvider,
     private menuCtrl: MenuController,
+    private viewService: ViewService,
     private ngZone:   NgZone) {
        this.settings.getActiveTheme().subscribe(val => this.selectedTheme = val);
       platform.ready().then(() => {
@@ -65,20 +67,6 @@ export class MyApp {
 
   menuOpened(){
     this.initializeCountDown();
-  }
-
-  formatDigitalClock(inputSeconds: number) {
-    const secNum = parseInt(inputSeconds.toString(), 10);
-    const hours = Math.floor(secNum / 3600);
-    const minutes = Math.floor((secNum - (hours * 3600)) / 60);
-    const seconds = secNum - (hours * 3600) - (minutes * 60);
-    let hoursString = '';
-    let minutesString = '';
-    let secondsString = '';
-    hoursString = (hours < 10) ? '0' + hours : hours.toString();
-    minutesString = (minutes < 10) ? '0' + minutes : minutes.toString();
-    secondsString = (seconds < 10) ? '0' + seconds : seconds.toString();
-    return hoursString + ':' + minutesString + ':' + secondsString;
   }
 
   startTicking(){

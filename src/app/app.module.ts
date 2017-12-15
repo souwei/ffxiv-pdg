@@ -8,6 +8,7 @@ import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DungeonInfoPage } from '../pages/dungeon-info/dungeon-info';
 import { DungeonService } from './services/dungeon-service';
+import { ViewService } from './services/view-service';
 import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing';
 import { SettingsProvider } from '../providers/settings/settings';
 
@@ -35,6 +36,7 @@ import { SettingsProvider } from '../providers/settings/settings';
     StatusBar,
     SplashScreen,
     DungeonService,
+    ViewService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SettingsProvider
   ]
