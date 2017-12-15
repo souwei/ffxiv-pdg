@@ -39,7 +39,6 @@
     "moment": "^2.19.4",
     "moment-duration-format": "^2.0.0",
     "rxjs": "5.5.2",
-    "string-remove-thousand-separators": "^2.0.3",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.18"
   },

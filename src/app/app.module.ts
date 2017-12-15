@@ -10,7 +10,6 @@ import { DungeonInfoPage } from '../pages/dungeon-info/dungeon-info';
 import { DungeonService } from './services/dungeon-service';
 import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing';
 import { SettingsProvider } from '../providers/settings/settings';
-import { Timer } from '../components/countdown-timer/timer';
 
 @NgModule({
   declarations: [
@@ -18,8 +17,7 @@ import { Timer } from '../components/countdown-timer/timer';
     TabsPage,
     DungeonInfoPage,
     DungeonsListingPage,
-    SettingsPage,
-    Timer
+    SettingsPage
   ],
   imports: [
     BrowserModule,
@@ -31,8 +29,7 @@ import { Timer } from '../components/countdown-timer/timer';
     TabsPage,
     DungeonInfoPage,
     DungeonsListingPage,
-    SettingsPage,
-    Timer
+    SettingsPage
   ],
   providers: [
     StatusBar,
