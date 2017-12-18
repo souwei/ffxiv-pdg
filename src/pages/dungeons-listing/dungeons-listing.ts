@@ -13,6 +13,7 @@ export class DungeonsListingPage implements OnInit{
   expLogoPaths: {};
 
   dungeonsCollection: DungeonCollection[];
+  loadedCollection: DungeonCollection[];
 
   dungeonPage = DungeonInfoPage;
   selectedCategory: string;
@@ -24,7 +25,9 @@ export class DungeonsListingPage implements OnInit{
 
   ngOnInit(){
     this.selectedCategory = this.navParams.data['type'];
-    this.dungeonsCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
+    // this.dungeonsCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
+    this.loadedCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
+    this.initializeItems();
     this.dungeonsIcon = this.dungeonSvr.getDungeonIcons();
     this.expLogoPaths = this.dungeonSvr.getExpLogos();
   }
@@ -35,6 +38,23 @@ export class DungeonsListingPage implements OnInit{
 
   getExpLogo(expansion:string){
     return this.expLogoPaths[expansion];
+  }
+
+  initializeItems(): void {
+    this.dungeonsCollection = this.loadedCollection;
+  }
+
+  getItems(searchbar){
+    this.initializeItems();
+    var q = searchbar.target.value;
+    if (!q || q.trim() == '') {
+      return;
+    }
+    console.log(q);
+
+    this.dungeonsCollection = this.dungeonSvr.filterItems(q);
+    //console.log(this.dungeonSvr.filterItems(q));
+
   }
 
 }

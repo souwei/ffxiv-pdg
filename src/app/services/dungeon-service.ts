@@ -44,4 +44,12 @@ export class DungeonService {
     return expLogoPaths;
   }
 
+  filterItems(searchTerm){
+    return LevelDungeons.filter((dS)=>{
+      return dS.dungeons.some((dE)=>{
+        return dE.dungeonName.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+      })
+    });
+  }
+
 }

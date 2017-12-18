@@ -13,6 +13,7 @@
 <ion-content padding>
   <ion-list no-lines>
     <b> space </b> //Space between navbar and content
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
     <ion-card no-lines *ngFor="let dungeonCategory of dungeonsCollection">
       <ion-card-title class="t1" padding-horizontal>
         <img class="exp-logo" [src]="getExpLogo(dungeonCategory.dungeonSeries)" alt="">
