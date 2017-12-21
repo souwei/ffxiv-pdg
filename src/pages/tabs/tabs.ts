@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DungeonsListingPage } from '../dungeons-listing/dungeons-listing';
 import { SettingsProvider } from '../../providers/settings/settings';
+import { TrialsListingPage } from '../trials-listing/trials-listing';
 
 @Component({
   selector: 'page-tabs',
@@ -14,19 +15,20 @@ import { SettingsProvider } from '../../providers/settings/settings';
                [rootParams]="{type:'expert'}"
                tabIcon="trial"></ion-tab>
 
-      <ion-tab [root]="dungeonsListingPage"
+      <ion-tab [root]="trialsListingPage"
                [rootParams]="{type:'leveling'}"
                tabIcon="raid"></ion-tab>
 
       <ion-tab [root]="dungeonsListingPage"
                [rootParams]="{type:'expert'}"
-               tabIcon="star"></ion-tab>          
+               tabIcon="star"></ion-tab>
     </ion-tabs>
   `
 })
 
 export class TabsPage {
   dungeonsListingPage = DungeonsListingPage;
+  trialsListingPage = TrialsListingPage;
   selectedTheme: String;
 
   constructor(private settings: SettingsProvider){
