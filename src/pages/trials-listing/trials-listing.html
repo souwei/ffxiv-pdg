@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle >
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title text-center> {{ selectedCategory | uppercase }} DUNGEONS </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list no-lines>
+    <b> space </b> //Space between navbar and content
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+    <ion-card no-lines *ngIf="arrDungeons.length>0">
+      <ion-card-title class="t1" padding-horizontal>
+        <img class="exp-logo" [src]="getExpLogo('A Realm Reborn')" alt="">
+      </ion-card-title>
+        <button
+                ion-item
+                no-lines
+                detail-push
+                [navPush]="dungeonPage"
+                [navParams]="arrDungeon"
+                *ngFor="let arrDungeon of arrDungeons">
+          <img margin-vertical class="dungeon-logo" item-left [src]="getDungeonIcon(arrDungeon.mainStoryQuest)" alt="">
+          <span class="h2">{{ arrDungeon.dungeonName }}</span>
+        </button>
+    </ion-card>
+
+    <ion-card no-lines *ngIf="hvwDungeons.length>0">
+      <ion-card-title class="t1" padding-horizontal>
+        <img class="exp-logo" [src]="getExpLogo('Heavensward')" alt="">
+      </ion-card-title>
+        <button
+                ion-item
+                no-lines
+                detail-push
+                [navPush]="dungeonPage"
+                [navParams]="hvwDungeon"
+                *ngFor="let hvwDungeon of hvwDungeons">
+          <img margin-vertical class="dungeon-logo" item-left [src]="getDungeonIcon(hvwDungeon.mainStoryQuest)" alt="">
+          <span class="h2">{{ hvwDungeon.dungeonName }}</span>
+        </button>
+    </ion-card>
+
+    <ion-card no-lines *ngIf="sbDungeons.length>0">
+      <ion-card-title class="t1" padding-horizontal>
+        <img class="exp-logo" [src]="getExpLogo('Stormblood')" alt="">
+      </ion-card-title>
+        <button
+                ion-item
+                no-lines
+                detail-push
+                [navPush]="dungeonPage"
+                [navParams]="sbDungeon"
+                *ngFor="let sbDungeon of sbDungeons">
+          <img margin-vertical class="dungeon-logo" item-left [src]="getDungeonIcon(sbDungeon.mainStoryQuest)" alt="">
+          <span class="h2">{{ sbDungeon.dungeonName }}</span>
+        </button>
+    </ion-card>
+
+  </ion-list>
+</ion-content>

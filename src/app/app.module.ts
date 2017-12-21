@@ -11,14 +11,15 @@ import { DungeonService } from './services/dungeon-service';
 import { ViewService } from './services/view-service';
 import { DungeonsListingPage } from '../pages/dungeons-listing/dungeons-listing';
 import { SettingsProvider } from '../providers/settings/settings';
-
+import { TrialsListingPage } from '../pages/trials-listing/trials-listing';
 @NgModule({
   declarations: [
     MyApp,
     TabsPage,
     DungeonInfoPage,
     DungeonsListingPage,
-    SettingsPage
+    SettingsPage,
+    TrialsListingPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,8 @@ import { SettingsProvider } from '../providers/settings/settings';
     TabsPage,
     DungeonInfoPage,
     DungeonsListingPage,
-    SettingsPage
+    SettingsPage,
+    TrialsListingPage
   ],
   providers: [
     StatusBar,

@@ -25,7 +25,6 @@ export class DungeonsListingPage implements OnInit{
 
   ngOnInit(){
     this.selectedCategory = this.navParams.data['type'];
-    // this.dungeonsCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
     this.loadedCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
     this.initializeItems();
     this.dungeonsIcon = this.dungeonSvr.getDungeonIcons();
@@ -42,19 +41,6 @@ export class DungeonsListingPage implements OnInit{
 
   initializeItems(): void {
     this.dungeonsCollection = this.loadedCollection;
-  }
-
-  getItems(searchbar){
-    this.initializeItems();
-    var q = searchbar.target.value;
-    if (!q || q.trim() == '') {
-      return;
-    }
-    console.log(q);
-
-    this.dungeonsCollection = this.dungeonSvr.filterItems(q);
-    //console.log(this.dungeonSvr.filterItems(q));
-
   }
 
 }
