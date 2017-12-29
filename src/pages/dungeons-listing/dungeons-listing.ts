@@ -3,30 +3,26 @@ import { NavParams } from 'ionic-angular';
 import { DungeonInfoPage } from '../dungeon-info/dungeon-info';
 import { DungeonService } from '../../app/services/dungeon-service';
 import { DungeonCollection } from '../../data/dungeonColletion.interface';
+import { Dungeon } from '../../data/dungeon.interface';
+//import { arr,hvw,sb } from '../../data/dungeonsInfo';
 
 @Component({
   selector: 'page-dungeons-listing',
   templateUrl: 'dungeons-listing.html',
 })
+
 export class DungeonsListingPage implements OnInit{
-
-  expLogoPaths: {};
-
-  dungeonsCollection: DungeonCollection[];
-  loadedCollection: DungeonCollection[];
-
+  expLogoPaths:     {};
+  dungeonsIcon:     {};
+  arrDungeons:      Dungeon[];
+  hvwDungeons:      Dungeon[];
+  sbDungeons:       Dungeon[];
   dungeonPage = DungeonInfoPage;
-  selectedCategory: string;
-  dungeonsIcon: {};
-
 
   constructor(private dungeonSvr: DungeonService, private navParams:  NavParams){
   }
 
   ngOnInit(){
-    this.selectedCategory = this.navParams.data['type'];
-    //this.loadedCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
-    this.loadedCollection = this.dungeonSvr.getAllDungeons();
     this.initializeItems();
     this.dungeonsIcon = this.dungeonSvr.getDungeonIcons();
     this.expLogoPaths = this.dungeonSvr.getExpLogos();
@@ -41,7 +37,33 @@ export class DungeonsListingPage implements OnInit{
   }
 
   initializeItems(): void {
-    this.dungeonsCollection = this.loadedCollection;
+    this.arrDungeons = this.dungeonSvr.getDungeons('arr');
+    this.hvwDungeons = this.dungeonSvr.getDungeons('hvw');
+    this.sbDungeons = this.dungeonSvr.getDungeons('sb');
+  }
+
+  getItems(searchbar){
+    this.initializeItems();
+    var q = searchbar.target.value;
+    if (!q || q.trim() == '') {
+      return;
+    }
+    this.filterItems(q);
+  }
+
+  //to do refactor this section
+  filterItems(searchTerm){
+    this.arrDungeons = this.arrDungeons.filter((dun)=>{
+      return dun.dungeonName.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+    });
+
+    this.hvwDungeons = this.hvwDungeons.filter((dun)=>{
+      return dun.dungeonName.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+    })
+
+    this.sbDungeons = this.sbDungeons.filter((dun)=>{
+      return dun.dungeonName.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+    })
   }
 
 }

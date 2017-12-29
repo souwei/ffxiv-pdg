@@ -8,19 +8,15 @@ import { TrialsListingPage } from '../trials-listing/trials-listing';
   template: `
     <ion-tabs (ionChange)="resetStack($event)">
       <ion-tab [root]="dungeonsListingPage"
-               [rootParams]="{type:'leveling'}"
                tabIcon="dungeon"></ion-tab>
 
       <ion-tab [root]="dungeonsListingPage"
-               [rootParams]="{type:'expert'}"
                tabIcon="trial"></ion-tab>
 
       <ion-tab [root]="trialsListingPage"
-               [rootParams]="{type:'leveling'}"
                tabIcon="raid"></ion-tab>
 
       <ion-tab [root]="dungeonsListingPage"
-               [rootParams]="{type:'expert'}"
                tabIcon="star"></ion-tab>
     </ion-tabs>
   `

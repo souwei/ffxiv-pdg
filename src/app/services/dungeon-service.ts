@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import LevelDungeons from '../../data/levelingDungeons';
 import ExpertDungeons from '../../data/expertDungeons';
 import AllDungeons from '../../data/dungeons.data';
+import { arr,hvw,sb } from '../../data/dungeonsInfo';
+import { Dungeon } from '../../data/dungeon.interface';
 
 import { DungeonCollection } from '../../data/dungeonColletion.interface';
 
@@ -30,12 +32,13 @@ export class DungeonService {
 
   constructor() { }
 
-  getDungeons(dungeonType: string): DungeonCollection[] {
-    return (dungeonType === 'leveling') ? LevelDungeons : ExpertDungeons;
-  }
-
-  getAllDungeons(): DungeonCollection[] {
-    return AllDungeons;
+  getDungeons(dungeonExp: string): Dungeon[] {
+    var dungeonSet = {
+      "arr" : arr,
+      "hvw" : hvw,
+      "sb"  : sb
+    }
+    return dungeonSet[dungeonExp];
   }
 
   getTipIconPaths(): object {
