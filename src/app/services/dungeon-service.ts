@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import LevelDungeons from '../../data/levelingDungeons';
 import ExpertDungeons from '../../data/expertDungeons';
+import AllDungeons from '../../data/dungeons.data';
+
 import { DungeonCollection } from '../../data/dungeonColletion.interface';
 
 const tipIconPaths = {
@@ -32,6 +34,10 @@ export class DungeonService {
     return (dungeonType === 'leveling') ? LevelDungeons : ExpertDungeons;
   }
 
+  getAllDungeons(): DungeonCollection[] {
+    return AllDungeons;
+  }
+
   getTipIconPaths(): object {
     return tipIconPaths;
   }
@@ -42,14 +48,6 @@ export class DungeonService {
 
   getExpLogos() : object {
     return expLogoPaths;
-  }
-
-  filterItems(searchTerm){
-    return LevelDungeons.filter((dS)=>{
-      return dS.dungeons.some((dE)=>{
-        return dE.dungeonName.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
-      })
-    });
   }
 
 }

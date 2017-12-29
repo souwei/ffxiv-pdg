@@ -25,7 +25,8 @@ export class DungeonsListingPage implements OnInit{
 
   ngOnInit(){
     this.selectedCategory = this.navParams.data['type'];
-    this.loadedCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
+    //this.loadedCollection = this.dungeonSvr.getDungeons(this.selectedCategory);
+    this.loadedCollection = this.dungeonSvr.getAllDungeons();
     this.initializeItems();
     this.dungeonsIcon = this.dungeonSvr.getDungeonIcons();
     this.expLogoPaths = this.dungeonSvr.getExpLogos();
