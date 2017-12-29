@@ -4,7 +4,7 @@ import { DungeonInfoPage } from '../dungeon-info/dungeon-info';
 import { DungeonService } from '../../app/services/dungeon-service';
 import { DungeonCollection } from '../../data/dungeonColletion.interface';
 import { Dungeon } from '../../data/dungeon.interface';
-import { arr,hvw,sb } from '../../data/dungeonsInfo';
+import { arr } from '../../data/trials.data';
 
 @Component({
   selector: 'page-trials-listing',
@@ -14,18 +14,16 @@ export class TrialsListingPage implements OnInit{
 
   expLogoPaths: {};
   dungeonPage = DungeonInfoPage;
-  selectedCategory: string;
   dungeonsIcon: {};
 
   arrDungeons:  Dungeon[];
-  hvwDungeons:  Dungeon[];
-  sbDungeons:   Dungeon[];
+  hvwDungeons:  Dungeon[] = [];
+  sbDungeons:   Dungeon[] = [];
 
   constructor(private dungeonSvr: DungeonService, private navParams:  NavParams){
   }
 
   ngOnInit(){
-    this.selectedCategory = this.navParams.data['type'];
     this.initializeItems();
     this.dungeonsIcon = this.dungeonSvr.getDungeonIcons();
     this.expLogoPaths = this.dungeonSvr.getExpLogos();
@@ -41,8 +39,6 @@ export class TrialsListingPage implements OnInit{
 
   initializeItems(): void {
     this.arrDungeons = arr;
-    this.hvwDungeons = hvw;
-    this.sbDungeons = sb;
   }
 
   getItems(searchbar){

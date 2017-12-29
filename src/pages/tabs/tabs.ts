@@ -10,7 +10,7 @@ import { TrialsListingPage } from '../trials-listing/trials-listing';
       <ion-tab [root]="dungeonsListingPage"
                tabIcon="dungeon"></ion-tab>
 
-      <ion-tab [root]="dungeonsListingPage"
+      <ion-tab [root]="trialsListingPage"
                tabIcon="trial"></ion-tab>
 
       <ion-tab [root]="trialsListingPage"
