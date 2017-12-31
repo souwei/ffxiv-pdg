@@ -37,9 +37,10 @@ export class DungeonsListingPage implements OnInit{
   }
 
   initializeItems(): void {
-    this.arrDungeons = this.dungeonSvr.getDungeons('arr');
-    this.hvwDungeons = this.dungeonSvr.getDungeons('hvw');
-    this.sbDungeons = this.dungeonSvr.getDungeons('sb');
+    //refactor and obtain data as a single whole when backend api is ready
+    this.dungeonSvr.getDungeons('arr').then(arr => this.arrDungeons = arr);
+    this.dungeonSvr.getDungeons('hvw').then(hvw => this.hvwDungeons = hvw);
+    this.dungeonSvr.getDungeons('sb').then(sb => this.sbDungeons = sb);
   }
 
   getItems(searchbar){

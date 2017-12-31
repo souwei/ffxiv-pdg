@@ -32,13 +32,13 @@ export class DungeonService {
 
   constructor() { }
 
-  getDungeons(dungeonExp: string): Dungeon[] {
+  getDungeons(dungeonExp: string): Promise<Dungeon[]> {
     var dungeonSet = {
       "arr" : arr,
       "hvw" : hvw,
       "sb"  : sb
     }
-    return dungeonSet[dungeonExp];
+    return Promise.resolve(dungeonSet[dungeonExp]);
   }
 
   getTipIconPaths(): object {
